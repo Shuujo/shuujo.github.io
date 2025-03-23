@@ -45,7 +45,10 @@ body
 }
 
 /* CSS section for the rose picture under the IMG section */
-
+.rosePicture
+{
+    width: 30%;
+}
 
 /* CSS section for the rose picture banner*/
 
@@ -72,6 +75,12 @@ body
     padding-top: 2em;
 }
 
+/* CSS FOR Table Example */
+.tableExample tr th
+{
+    text-align: left;
+}
+
 /* CSS for NavBar */
 .navbar ul
 {
@@ -79,7 +88,6 @@ body
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* position: fixed; */
     width: 100%;
     top: 0;
     background-color: #1d1c1c;
