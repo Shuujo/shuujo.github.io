@@ -1,0 +1,254 @@
+/* global CSS elements in the Body */
+html
+{
+    font-family: 'Arial Black';
+}
+
+body
+{
+    width: 100%;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1d1c1c;
+    /* background-color: rgb(255, 224, 229); */
+}
+
+.mainBody
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.sectionDiv
+{
+    padding-bottom: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 3px, solid, #000;
+}
+
+.title
+{
+    color: white;
+    font-weight: bold;
+    font-family: 'Baloo Bhaijaan';
+    text-decoration: underline;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.blockDiv
+{
+    padding: 2%;
+    background-color: rgb(255, 224, 229);
+    text-align: center;
+}
+
+.inlineSpan
+{
+    border: 5px solid black;
+    color: red;
+}
+
+/* CSS section for the rose picture under the IMG section */
+.rosePicture
+{
+    width: 30%;
+}
+
+/* CSS section for the rose picture banner on the Home Page*/
+.mainBanner
+{
+    width: 100%;
+    height: 45em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: 10% 25%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.textContainer
+{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.textContainer h1
+{
+    font-family: 'Didot';
+    width: inherit;
+    font-size: 7em;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.textContainer h3
+{
+    font-size: 1em;
+    width: inherit;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 2%;
+}
+
+/* CSS for Main Footer */
+.mainFooter
+{
+    width: inherit;
+    background-color: #1d1c1c;
+    height: 15em;
+}
+
+.footerTable
+{
+    font-family: 'Didot';
+    width: 100%;
+}
+
+.footerTable tr th
+{
+    /* background-color: white; */
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.footerTable tr td
+{
+    /* background-color: white; */
+    color: white;
+    padding-left: 5%;
+    width: 33%;
+}
+
+.newsletterType
+{
+    width: 40%;
+    color: white;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+/* CSS for NavBar Main */
+.mainNavbar
+{
+    display: flex;
+    list-style-type: none;
+    background-color: #1d1c1c;
+}
+
+.mainNavbar .active
+{
+    background-color: rgb(93, 137, 225);
+    color: #000;
+}
+
+.mainNavbar a
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(254, 216, 216);
+    padding: 0.5em 1em;
+    background-color: #1d1c1c;
+}
+
+.mainNavbar a:hover:not(.active)
+{
+    background-color: #6783ad;
+}
+
+@media screen and (max-width: 600px)
+{
+    .mainNavbar
+    {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .textContainer h1
+    {
+        font-size: 5em;
+    }
+
+    .textContainer h3
+    {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 1100px)
+{
+
+    .textContainer h1
+    {
+        font-size: 6em;
+    }
+
+
+}
+
+/* CSS for NavBar */
+.navbar
+{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    background-color: #b4a4a9;
+}
+
+.navbar ul li
+{
+    float: left;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0.5em 0.5em;
+    background-color: #b4a4a9;
+}
+
+.navbar ul li a:hover:not(.active)
+{
+    background-color: #d9aab9;
+}
+
+.navbar ol
+{
+    list-style-type: none;
+}
+
+.navbar .active
+{
+    background-color: rgb(58, 183, 141);
+    color: black;
+}
+
+

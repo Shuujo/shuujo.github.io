@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
     <!-- Reference CSS Stylesheet -->
-    <link rel="stylesheet" href="styles copy.css">
+    <link rel="stylesheet" href="styles/styles copy.css">
+    <script src="script/script.js"></script>
     <head>
         <title>Home</title>
     </head>
 
     <body>
         <!-- Main Nav Bar Section-->
-        <div class="mainNavbar">
+        <nav class="mainNavbar">
             <a href="index.html" class="active">HOME</a>
             <a href="tags.html">HTML TAGS & ESSENTIALS</a>
             <a href="contact.html">CONTACT</a>
-        </div>
+        </nav>
         <!-- Main Display for the Home Page-->
         <div class="mainBanner">
             <div class="textContainer">
                 <h1>
-                    Welcome to my Site! 
+                    THE MOONLIT GRILL
                 </h1>
                 <h3>
                     Greetings and thank you for navigating to my web page. This is a test website that holds key terms and essentials about HTML. This webpage is separated into three key sections: Home, HTML Tags and Essentials, and Contact Me. This is the homepage and all this is used for, is the landing page of this assignment and will hold links that are located at the top of webpage, nested within a navigation bar. Use this navbar to navigate between the different pages.                
@@ -26,7 +27,25 @@
         </div>
         <!-- Main Footer Section-->
         <div class="mainFooter">
-
+            <table class="footerTable">
+                <tr>
+                    <th colspan="2">
+                        Subscribe to my Newsletter
+                    </th>>
+                    <th>
+                        Contact Hours
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" class="newsletterType">
+                        <input type="button" value="Subscribe" onclick="showMessage()">
+                    </td>
+                    <td>
+                        wow
+                    </td>
+                </tr>
+            </table>
         </div> 
     </body>
 </html>
