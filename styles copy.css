@@ -1,4 +1,9 @@
 /* global CSS elements in the Body */
+html
+{
+    font-family: 'Arial Black';
+}
+
 body
 {
     width: 100%;
@@ -46,51 +51,13 @@ body
     color: red;
 }
 
-/* CSS section for flex-container */
-.flex-container
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-container > div
-{
-    width: 100%;
-}
-
 /* CSS section for the rose picture under the IMG section */
 .rosePicture
 {
     width: 30%;
 }
 
-/* CSS section for the rose picture banner*/
-
-.banner
-{
-    width: 100%;
-    height: 20em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: 10% 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-
-.banner h1
-{
-    text-align: center;
-    color: white;
-    font-size: 4em;
-    font-family: 'Baloo Bhaijaan';
-    overflow: hidden;
-    margin: auto;
-    padding-top: 2em;
-}
-
 /* CSS section for the rose picture banner on the Home Page*/
-
 .mainBanner
 {
     width: 100%;
@@ -103,21 +70,42 @@ body
     color: white;
 }
 
-
-.mainBanner h1
+.textContainer
 {
-    font-size: 6em;
-    text-align: right;
-    padding-top: 2em;
-    padding-left: 2em;
-    font-family: 'Baloo Bhaijaan';
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 15%;
+}
+
+.textContainer h1
+{
+    font-family: 'Didot';
+    width: inherit;
+    font-size: 7em;
+    text-align: justify;
+    text-justify: inter-word;
     overflow: hidden;
     margin: auto;
 }
 
-.mainBanner h3
+.textContainer h3
 {
-    text-align: right;
+    font-size: 1em;
+    width: inherit;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 2%;
+}
+
+/* CSS for Main Footer */
+.mainFooter
+{
+    width: inherit;
+    background-color: #000;
+    height: 15em;
+    margin: auto;
 }
 
 /* CSS FOR Table Example */
@@ -130,56 +118,34 @@ body
 .mainNavbar
 {
     display: flex;
-}
-
-
-
-.mainNavbar ul
-{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-    top: 0;
     background-color: #1d1c1c;
 }
 
-.mainNavbar ul li
+.mainNavbar .active
 {
-    float: left;
+    background-color: rgb(93, 137, 225);
+    color: #000;
 }
 
-.mainNavbar ul li a
+.mainNavbar a
 {
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
     color: rgb(254, 216, 216);
-    display: block;
     padding: 0.5em 1em;
     background-color: #1d1c1c;
 }
 
-.mainNavbar ul li a:hover:not(.active)
+.mainNavbar a:hover:not(.active)
 {
-    background-color: #533b42;
+    background-color: #6783ad;
 }
 
-.mainNavbar ol
+@media screen and (max-width: 600px)
 {
-    list-style-type: none;
-}
-
-.mainNavbar .active
-{
-    background-color: rgb(58, 183, 141);
-    color: black;
-}
-
-@media screen and (max-width: 1000px)
-{
-    .mainNavbar ul li a
+    .mainNavbar
     {
         flex-direction: column;
         background-color: white;
