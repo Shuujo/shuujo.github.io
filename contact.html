@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <!-- Reference CSS Stylesheet -->
-    <link rel="stylesheet" href="styles/styles copy.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <head>
-        <title>Home</title>
+        <title>Contact Me</title>
     </head>
 
     <body>
@@ -15,68 +15,139 @@
         </div>
         <!-- Main Display for the Contact Me Page-->
         <div class="mainBanner">
-            <div style="width: 85%; margin-left: 10%;">
+            <div class="textContainer">
                 <h1>
                     Contact Me
                 </h1>
-                <p style="text-align: right;">Hello! Welcome to the Contact Me page. This page will allow you to send a message to my personal e-mail. (It won't)</p>
-                <!-- Inserted a table containing <input> tags for users to enter their information and contact me -->
-                <table style="margin-left:75%; text-align: right;">
-                    <tr>
-                        <!-- First Name Input -->
-                        <td>
-                            First Name:
-                        </td>
-                        <td>
-                            <input type="text" placeholder="First Name" size="25">
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- Last Name Input -->
-                        <td>
-                            Last Name:
-                        </td>
-                        <td>
-                            <input type="text" placeholder="Last Name" size="25">
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- Email Input -->
-                        <td>
-                            Email:
-                        </td>
-                        <td>
-                            <input type="text" placeholder="Email" size="25">
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- Phone Number Input -->
-                        <td>
-                            Phone Number:
-                        </td>
-                        <td>
-                            <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="25" placeholder="Phone Number">
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- Message Box -->
-                        <td>
-                            Message:
-                        </td>
-                        <td>
-                            <textarea rows="10" cols="20">
-
-                            </textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- Send/Submit Button -->
-                        <td colspan="2">
-                            <input type="button" value="Send">
-                        </td>
-                    </tr>
-                </table>
+                <p>Hello! Welcome to the Contact Me page. This page will allow you to send a message to my personal e-mail. (It won't)</p>
             </div>
-        </div>
+        </div>      
+        <!-- Inserted a table containing <input> tags for users to enter their information and contact me -->
+        <table class="contactTable">
+            <tr>
+                <td class="mapFrame" colspan="2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.427190441902!2d-34.88547172465379!3d-8.057832780505873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1971f3a2233b%3A0xc6b682e7158004d4!2sFREDDY!5e0!3m2!1sen!2sca!4v1739288563122!5m2!1sen!2sca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </td>
+                <td class="inputTable" colspan="1">
+                    <table>
+                        <tr>
+                            <!-- First Name Input -->
+                            <td>
+                                First Name:
+                            </td>
+                            <td class="inputBox">
+                                <input type="text" placeholder="First Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Last Name Input -->
+                            <td>
+                                Last Name:
+                            </td>
+                            <td class="inputBox">
+                                <input type="text" placeholder="Last Name" size="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Email Input -->
+                            <td>
+                                Email:
+                            </td>
+                            <td class="inputBox">
+                                <input type="text" placeholder="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Phone Number Input -->
+                            <td>
+                                Phone Number:
+                            </td>
+                            <td class="inputBox">
+                                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Message Box -->
+                            <td>
+                                Message:
+                            </td>
+                            <td class="inputBox">
+                                <textarea rows="10" cols="20">
+            
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Send/Submit Button -->
+                            <td colspan="2">
+                                <input class="sendButton" type="button" value="Send">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="mainFooter">
+            <table class="footerTable">
+                <tr>
+                    <th>
+                        Subscribe to my Newsletter
+                    </th>
+                    <th>
+                        Contact Hours
+                    </th>
+                    <th>
+                        Social Media
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="newsletterType" placeholder="Email Address">
+                        <button onclick="showMessage()">Subscribe</button>
+                    </td>
+                    <td class="hours">
+                        <div>
+                            MONDAY:
+                            <br>
+                            TUESDAY - SATURDAY:
+                            <br>
+                            SUNDAY:
+                        </div>
+                        <div style="color: #6783ad; font-weight: bold;">
+                            CLOSED
+                            <br>
+                            5PM - 2AM
+                            <br>
+                            5PM - 12AM
+                        </div>
+                    </td>
+                    <td class="socialMediaLinks">
+                        <a href="https://www.facebook.com" target="_blank">
+                            Facebook
+                        </a>
+                        <a href="https://www.x.com" target="_blank">
+                            Twitter / X
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            Instagram
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            LinkedIn
+                        </a>
+                        <a href="https://maps.google.com" target="_blank">
+                            Google Maps
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="copyright" colspan="3">
+                        © Copyright 2025 by Josh Pahang. All Rights Reserved. 
+                        <a href="index.html">The Roselit Blog</a>
+                        is powered by HTML and CSS
+                    </td>
+                </tr>
+            </table>
+        </div> 
     </body>
 </html>

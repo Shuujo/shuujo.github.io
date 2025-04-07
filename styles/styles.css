@@ -1,11 +1,33 @@
-/* global CSS elements in the Body */
+/* global CSS elements in the Body
+================================================
+*/
+html
+{
+    font-family: 'Futura';
+}
+
+a
+{
+    text-decoration: none;
+}
+
 body
 {
     width: 100%;
     margin:0;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 224, 229);
+    background-color: #312e2e;
+}
+
+.pageTitle
+{
+    font-size: 2em;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    font-family: 'Didot';
+    color:#ffffff;
 }
 
 .mainBody
@@ -24,13 +46,10 @@ body
     border: 3px, solid, #000;
 }
 
-.title
+.sectionTitle
 {
-    color: white;
+    font-family: 'Didot';
     font-weight: bold;
-    font-family: 'Baloo Bhaijaan';
-    text-decoration: underline;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 .blockDiv
@@ -46,156 +65,278 @@ body
     color: red;
 }
 
-/* CSS section for flex-container */
-.flex-container
+/* CSS section for the table example under the 'table' section
+================================================
+*/
+.tableExample
 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.flex-container > div
-{
-    width: 100%;
-}
 
-/* CSS section for the rose picture under the IMG section */
+/* CSS section for the rose picture under the IMG section 
+================================================
+*/
 .rosePicture
 {
     width: 30%;
 }
 
-/* CSS section for the rose picture banner*/
+.contactTable
+{
+    width: 90%;
+    margin: 5%;
+}
 
-.banner
+.inputTable
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: 20%;
+    text-align: end;
+}
+
+.inputBox
+{
+    width: 50%;
+    text-align: start;
+    padding-left: 2%;
+}
+
+.inputBox > input[type="text"]
 {
     width: 100%;
-    height: 20em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: 10% 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
-
-.banner h1
+.inputBox > input[type="tel"]
 {
-    text-align: center;
-    color: white;
-    font-size: 4em;
-    font-family: 'Baloo Bhaijaan';
-    overflow: hidden;
-    margin: auto;
-    padding-top: 2em;
+    width: 100%;
 }
 
-/* CSS section for the rose picture banner on the Home Page*/
+.inputBox > textarea
+{
+    size: 30;
+}
 
+.mapFrame
+{
+    width: 60%;
+    padding-right: 5%;
+}
+
+.mapFrame iframe
+{
+    border-style: none;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.sendButton
+{
+    font-family: 'Didot';
+    color: white;
+    background-color: #1d1c1c;
+    text-decoration: none;
+    border: white 2px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.sendButton:hover
+{
+    background-color: #6783ad; 
+}
+
+/* CSS section for the rose picture banner on the Home Page
+================================================
+*/
 .mainBanner
 {
     width: 100%;
-    height: 45em;
+    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: 10% 25%;
-    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     color: white;
 }
 
-
-.mainBanner h1
+.textContainer
 {
-    font-size: 6em;
-    text-align: right;
-    padding-top: 2em;
-    padding-left: 2em;
-    font-family: 'Baloo Bhaijaan';
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.textContainer h1
+{
+    font-family: 'Didot';
+    width: inherit;
+    font-size: 7em;
+    text-align: center;
     overflow: hidden;
     margin: auto;
 }
 
-.mainBanner h3
+.textContainer h3
 {
+    font-size: 1em;
+    width: inherit;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.textContainer p
+{
+    text-align: center;
+}
+
+/* CSS for Main Footer 
+================================================
+*/
+.copyright
+{
+    font-size: 0.4em;
+    text-align: center;
+}
+
+.copyright a
+{
+    color:#6783ad;
+}
+
+.mainFooter
+{
+    padding-top: 1%;
+    width: inherit;
+    background-color: #1d1c1c;
+    height: 15em;
+}
+
+.footerTable
+{
+    font-family: 'Didot';
+    width: 100%;
+}
+
+.footerTable tr th
+{
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.footerTable tr td
+{
+    color: white;
+    padding-left: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 33%;
+}
+
+.footerTable button
+{
+    font-family: 'Didot';
+    color: white;
+    background-color: #1d1c1c;
+    text-decoration: none;
+    border: white 2px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footerTable button:hover
+{
+    background-color: #6783ad;
+}
+
+.hours > div
+{
+    display: inline-block;
     text-align: right;
 }
 
-/* CSS FOR Table Example */
-.tableExample tr th
+.newsletterType
 {
-    text-align: left;
+    font-family: 'Didot';
+    width: 40%;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border: rgb(255, 255, 255) 2px solid;
 }
 
-/* CSS for NavBar Main */
+.newsletterType:hover
+{
+    background-color: #6783ad;
+    color: white;
+}
+
+.socialMediaLinks a
+{
+    color: #6783ad;
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMediaLinks a:hover
+{
+    text-decoration: none;
+    color:#d9aab9;
+}
+
+/* CSS for NavBar at the header 
+================================================
+*/
 .mainNavbar
 {
     display: flex;
-}
-
-
-
-.mainNavbar ul
-{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-    top: 0;
     background-color: #1d1c1c;
-}
-
-.mainNavbar ul li
-{
-    float: left;
-}
-
-.mainNavbar ul li a
-{
-    font-size: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(254, 216, 216);
-    display: block;
-    padding: 0.5em 1em;
-    background-color: #1d1c1c;
-}
-
-.mainNavbar ul li a:hover:not(.active)
-{
-    background-color: #533b42;
-}
-
-.mainNavbar ol
-{
-    list-style-type: none;
 }
 
 .mainNavbar .active
 {
-    background-color: rgb(58, 183, 141);
-    color: black;
+    background-color: rgb(93, 137, 225);
+    color: #000;
 }
 
-@media screen and (max-width: 1000px)
+.mainNavbar a
 {
-    .mainNavbar ul li a
-    {
-        flex-direction: column;
-        background-color: white;
-    }
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(254, 216, 216);
+    padding: 0.5em 1em;
+    background-color: #1d1c1c;
 }
 
-/* CSS for NavBar */
-.navbar
+.mainNavbar a:hover:not(.active)
 {
+    background-color: #6783ad;
+}
+
+
+/* CSS for NavBar on tags.html
+================================================
+*/
+.navbarHTMLTags
+{
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-.navbar ul
-{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -205,32 +346,66 @@ body
     background-color: #b4a4a9;
 }
 
-.navbar ul li
-{
-    float: left;
-}
-
-.navbar ul li a
+.navbarHTMLTags a
 {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    display: block;
     padding: 0.5em 0.5em;
     background-color: #b4a4a9;
 }
 
-.navbar ul li a:hover:not(.active)
+.navbarHTMLTags a:hover
 {
     background-color: #d9aab9;
 }
 
-.navbar ol
+/* Responsiveness for screens less than 1100px
+================================================
+*/
+@media screen and (max-width: 1100px)
 {
-    list-style-type: none;
+
+    .textContainer h1
+    {
+        font-size: 6em;
+    }
+
+    .tableExample tr th h1
+    {
+        font-size: 20px;
+    }
 }
 
-.navbar .active
+/* Responsiveness for screens less than 700px
+================================================
+*/
+@media screen and (max-width: 700px)
 {
-    background-color: rgb(58, 183, 141);
-    color: black;
+    .hours
+    {
+        font-size: 0.7em;
+    }
+
+    .mainNavbar
+    {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .navbarHTMLTags
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .textContainer h1
+    {
+        font-size: 5em;
+    }
+
+    .textContainer h3
+    {
+        font-size: 0.8em;
+    }
+
 }
