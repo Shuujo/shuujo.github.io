@@ -1,3 +1,8 @@
+/* CSS ID's
+================================================
+*/
+
+
 /* global CSS elements in the Body
 ================================================
 */
@@ -35,6 +40,7 @@ body
     margin-left: 10%;
     margin-right: 10%;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 10%;
 
 }
 
@@ -358,6 +364,19 @@ body
 {
     background-color: #d9aab9;
 }
+
+/* CSS for JavaScript Page
+================================================
+*/
+
+.colourSelector p
+{
+    border: #000 solid 1px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
 
 /* Responsiveness for screens less than 1100px
 ================================================

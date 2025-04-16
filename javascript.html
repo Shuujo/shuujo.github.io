@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <!-- Reference CSS Stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="script/script.js"></script>
+    <head>
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <!-- Main Nav Bar Section-->
+        <nav class="mainNavbar">
+            <a href="index.html">HOME</a>
+            <a href="tags.html">HTML TAGS & ESSENTIALS</a>
+            <a href="javascript.html" class="active">JAVASCRIPT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <!-- Main Display for the JavaScript Page-->
+        <div class="pageTitle">
+            <h1>
+                JavaScript
+            </h1>
+        </div>
+        <div class="mainBody">
+            <!-- Click to Show an Alert Section-->
+            <div class="sectionDiv">
+                <br>
+                <h1 class="sectionTitle">Buttons</h1>
+                <p>
+                    Click this [Button] to show a message :)
+                </p>
+                <!-- Hover to Show an Alert Section-->
+                <button onclick="showAlert()">Click Me</button>
+                <br>
+                <br>
+                <p>
+                    Hover over this [Button] to show a message :)
+                </p>
+                <button onmouseover="hoverButton()">Hover Over Me</button>
+            </div>
+            <div class="sectionDiv">
+                <!-- Grab User Inputted Data Section-->
+                <h1 class="sectionTitle">Grabbing Values</h1>
+                <p>What is your name?</p>
+                <input id="name" type="text" placeholder="name">
+                <br>
+                <p>What is your age?</p>
+                <input id="age" type="number" pattern="0-9" min="0" placeholder="18">
+                <button onclick="determineAge()">Are you old?</button>
+            </div>
+            <div class="sectionDiv">
+                <!-- Number Increment Section-->
+                <h1 class="sectionTitle">Increment</h1>
+                <p>Increment</p>
+                <button id="loopButton" onclick="increment()">+</button>
+                <p>Count: </p>
+                <!-- Colour Changing Text Section-->
+                <input type="number" id="valueIncrement" value="0" disabled>
+                <p id="changingText">WOW This text is changing!!</p>
+
+            </div>
+            <div id="changeCSS" class="sectionDiv">
+                <!-- Hover to Change Background Colour Section-->
+                <h1 class="sectionTitle">Change CSS</h1>
+                <p>Hover Over the Colour Names to Change the Background Colour</p>
+                <div class="colourSelector">
+                    <p onmouseenter="changeCSS('pink')" onmouseleave="changeCSS('white')" style="background-color: pink;">Pink</p>
+                    <p onmouseenter="changeCSS('blue')" onmouseleave="changeCSS('white')" style="background-color: blue;">Blue</p>
+                    <p onmouseenter="changeCSS('yellow')" onmouseleave="changeCSS('white')" style="background-color: yellow;">Yellow</p>
+                    <p onmouseenter="changeCSS('green')" onmouseleave="changeCSS('white')" style="background-color: green;">Green</p>
+                </div>
+            </div>
+            <div class="sectionDiv"> 
+                <!-- Change an Image Section-->   
+                <h1 class="sectionTitle">Change Image</h1>
+                    <img id="pictureSwitch" class="rosePicture" alt="Rose Picture" src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2488&auto=format&fit=cropixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    <br>
+                    <button onclick="pictureSwitch()">Click Here to Switch the Picture</button>
+            </div>
+            <div class="sectionDiv">
+                <!-- Repeat Message Section-->
+                <h1 class="sectionTitle">For Loops</h1>
+
+                    <p>How Many Times You Want to Repeat?</p>
+                    <input id="repeatNumber" type="number" value="0">
+
+                    <p>What is Your Message?</p>
+                    <input id="repeatMessage" type="text">
+                    
+                    <input type="button" value="Go" onclick="repeatMessage()">
+                    <div id="repeatFinal">
+
+                    </div>
+            </div>
+        </div>
+        <!-- Main Footer Section-->
+        <div class="mainFooter">
+            <table class="footerTable">
+                <tr>
+                    <th>
+                        Subscribe to my Newsletter
+                    </th>
+                    <th>
+                        Contact Hours
+                    </th>
+                    <th>
+                        Social Media
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="newsletterType" placeholder="Email Address">
+                        <button onclick="showMessage()">Subscribe</button>
+                    </td>
+                    <td class="hours">
+                        <div>
+                            MON:
+                            <br>
+                            TUES - SAT:
+                            <br>
+                            SUN:
+                        </div>
+                        <div style="color: #6783ad; font-weight: bold;">
+                            CLOSED
+                            <br>
+                            5PM - 2AM
+                            <br>
+                            5PM - 12AM
+                        </div>
+                    </td>
+                    <td class="socialMediaLinks">
+                        <a href="https://www.facebook.com" target="_blank">
+                            Facebook
+                        </a>
+                        <a href="https://www.x.com" target="_blank">
+                            Twitter / X
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            Instagram
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            LinkedIn
+                        </a>
+                        <a href="https://maps.google.com" target="_blank">
+                            Google Maps
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="copyright" colspan="3">
+                        © Copyright 2025 by Josh Pahang. All Rights Reserved. 
+                        <a href="index.html">The Roselit Blog</a>
+                        is powered by HTML and CSS
+                    </td>
+                </tr>
+            </table>
+        </div> 
+    </body>
+</html>
