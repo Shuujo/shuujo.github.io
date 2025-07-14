@@ -1,0 +1,2 @@
+# shuujo.github.io
+
