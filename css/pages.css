@@ -25,7 +25,7 @@
 
 .sectionCenter p
 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #loadingSection
@@ -91,14 +91,14 @@
     color: black;
 }
 
-#loadingSection[data-theme='dark'] #cardSection .cards .card h2
+#loadingSection[data-theme='dark'] #cardSection .cards .card h2, #loadingSection[data-theme='dark'] #contentSection #sectionTitle
 {
     font-size: 3rem;
     color: white;
     text-shadow: rgb(0, 0, 0) 2px 2px;
 }
 
-#loadingSection[data-theme='light'] #cardSection .cards .card h2
+#loadingSection[data-theme='light'] #cardSection .cards .card h2, #loadingSection[data-theme='light'] #contentSection #sectionTitle
 {
     font-size: 3rem;
     color: black;
