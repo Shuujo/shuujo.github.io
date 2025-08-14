@@ -3,211 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="res/styles.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>CPRG218 Responsive Website Assignment - Josh Pahang</title>
+    <title>Welcome</title>
 </head>
-<body>
-    <header id="header">
+<body id="mainBody" class="hideOverflow" onload="loadHome()">
+<!-- <body id="mainBody" class="hideOverflow"> -->
+    <header id="header" style="display: none;">
         <div class="navBar">
-            <a href="#heroAnchor">
-                <img class="navLogo" src="res/ShuujoEyeLogo.png" alt="Initial design of the Shuuujo Logo">
-            </a>
-            <h1 class="navName">Josh Pahang</h1>
+            <img id="headerLogo" class="navLogo" src="res/ShuujoEyeLogo.png" alt="Initial design of the Shuuujo Logo" onclick="">
         </div>
         <button id="toggle">&#9776</button>
         <nav class="navMenu" id="menu">
             <ul>
                 <li>
-                    <a class="links" href="#cardAnchor">About</a>
+                    <a class="links" href="about.html">About</a>
                 </li>
                 <li>
-                    <a class="links" href="#contentAnchor">Projects</a>
+                    <a class="links" href="projects.html">Projects</a>
                 </li>
                 <li>
-                    <a class="links" href="#contactAnchor">Contact</a>
+                    <a class="links" href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
+        <div id="alertSection"></div>
     </header>
-    <main>
-        <section id="heroSection">
-            <a id="heroAnchor" class="anchor"></a>
-            <div class="heroContent heroGradient">
-                <h1 class="heroTitle">Creative Portfolio</h1>
-                <div class="heroDescription">
-                    <p>Greetings, My Name is <b style="color: #EE3150">Josh Pahang</b>. <br>Welcome to my work showcase.<br>//always striving for improvement</p>
-                    <br>
-                    <a id="exploreButton" href="#contentSection">Explore My Work</a>
-                </div> 
-            </div>
-        </section>
-        <section id="cardSection">
-            <a id="cardAnchor" class="anchor"></a>
-            <div id="sectionTitle">
-                <h1>About Me //</h1>
-            </div>
-            <div class="cards">
-                <article class="card card-elevation">
-                    <h2>Education</h2>
-                    <ul>
-                        <li>
-                            <h3>
-                                Interactive Design Diploma
-                            </h3>
-                            <h4>
-                                Southern Alberta Institue of Alberta
-                            </h4>
-                            <h5>
-                                Graphic Design Major
-                            </h5>
-                            <p>
-                                • Relevant Courses: Intermediate Visual Design, Web Application Development
-                            </p>
-                        </li>
-                        <li>
-                            <h3>
-                                Information Technology Diploma
-                            </h3>
-                            <h4>Southern Alberta Institue of Alberta</h4>
-                            <h5>
-                                Software Development Major
-                            </h5>
-                            <p>
-                                • Relevant Courses: Web Application Programming, Website Development Fundamentals
-                            </p>
-                        </li>
-                    </ul>
-                </article>
-                
-                <article class="card card-elevation card-img-container">
-                    <h2>
-                        Josh Pahang
-                    </h2>
-                    <p>
-                        I am a 26 year old student at the Southern Alberta Institue of Technology, currently completing the <i>Interactive Design    
-                            Diploma</i>, majoring in 'Graphic Design'.
-                        </p>
-                        <div class="cardImage">
-                            <img alt="Image of Josh Pahang" src="res/JoshPahang.jpg" oncontextmenu="return false;">
-                        </div>
-                    </article>
-                    
-                    <article class="card card-elevation card-img-container final">
-                        <h2>Experience</h2>
-                        <ul>
-                            <li>
-                                <h3>
-                                    Head Server / Bartender	
-                                </h3>
-                                <h5>
-                                    Kinjo Sushi & Grill
-                                </h5>
-                                
-                                <p>
-                                    • Designed 7 high-quality designs that advertised the restaurant's drinks, following a massive increase in drink sales.
-                                </p>
-                            </li>
-                            <li>
-                                <h3>
-                                    Oracle Developer
-                                </h3>
-                                <h5>
-                                    Shaw Communications
-                                </h5>
-                                <p>
-                                    •	Created and managed over 150+ SQL packages that optimized warehouse inventory.
-                                </p>
-                                <p>
-                                    •	Optimized the current SQL statements and reduced latency by 8%.
-                                </p>
-                            </li>
-                        </ul>
-                    </article>
-                </div>
-        </section>
-
-        <section id="contentSection">
-            <a id="contentAnchor" class="anchor"></a>
-            <div id="sectionTitle">
-                <h1>Projects // Illustrations</h1>
-            </div>
-            <div class="sectionCenter">
-                <p>
-                    This section will cover a variety of illustrations and projects ranging from my personal work, to school work, and industry work experience.
-                </p>
-            </div>
-            <div class="illustrations">
-                <div class="gridImage zero">
-                    <img src="res/illustrations/Dress.png" alt="Drawing of a girl in a dress by Josh Pahang" oncontextmenu="return false;">
-                </div>
-                <div class="gridImage one">
-                    <img src="res/illustrations/mystic mined.png" alt="Drawing of a girl holding a card by Josh Pahang" oncontextmenu="return false;">
-                </div>
-                <div class="gridImage two">
-                    <img src="res/illustrations/Design 1 Revised.png" alt="Graphic Design of a movie poster named 'Fleshdrive' by Josh Pahang" oncontextmenu="return false;">
-                </div>
-                <div class="gridImage three">
-                    <img src="res/illustrations/shuuujo.png" alt="Sticker drawing of character designed by Josh Pahang" oncontextmenu="return false;">
-                </div>
-                <div class="gridImage four">
-                    <img src="res/illustrations/Kinjo_Bubbletea_Designs.png" alt="Kinjo Bubble Tea cup designs by Josh Pahang"  oncontextmenu="return false;">
-                </div>
-                <div class="gridImage five">
-                    <img src="res/illustrations/OC 2021.png" alt="Original character designed by Josh Pahang in 2021" oncontextmenu="return false;">
-                </div>
-            </div>
-        </section>
-        <section id="videoSection">
-            <div id="sectionTitle">
-                <h1>Projects // Videos</h1>
-            </div>
-            <div class="sectionCenter videoSection">
-                <p>
-                    This section will covers a commercial video project from school. Made with Adobe After Effects, Adobe Photoshop, and Adobe Premiere Pro.
-                </p>
-            </div>
-            <video controls loop muted preload="metadata" width="1000px">
-                <source src="res/videos/ShutterVerse_Commercial_LQ.mp4" type="video/mp4"/>
-            </video>
-        </section>
-        <section id="contactSection">
-            <a id="contactAnchor" class="anchor"></a>
-            <div id="sectionTitle">
-                <h1>Contact Me //</h1>
-            </div>
-            <div class="contactTable">
-                <table>
-                    <tr>
-                        <td>Email:</td>
-                        <td class="link"><a href="mailto:joshpahang@hotmail.com">Joshpahang@hotmail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td>School Email:</td>
-                        <td class="link"><a href="mailto:josh.pahang@edu.sait.ca.com">josh.pahang@edu.sait.com</a></td>
-                    </tr>
-                    <tr>
-                        <td>LinkedIn:</td>
-                        <td class="link"><a href="https://www.linkedin.com/in/josh-pahang/">Linkedin - Josh Pahang</a></td>
-                    </tr>
-                    <tr>
-                        <td>GitHub:</td>
-                        <td class="link"><a href="https://github.com/Shuujo/">Github - Josh Pahang / Shuujo</a></td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+    
+    <main id="loadingSection" class="logoLoading">
+        <img class="logo" alt="Shuujo Eye Logo" src="res/ShuujoEyeLogo.png" onclick="changeIteration('first')">
     </main>
-    <footer>
-        <a href="#heroAnchor">
+    <footer id="homeFooter" class="hidden">
+        <a href="index.html">
             <img class="navLogo" src="res/ShuujoLogo.png" alt="Alternate design of the Shuuujo Logo">
         </a>
         <h3>
             © 2025 Josh Pahang // Shuujo. All Rights Reserved.
         </h3>
-        <a href="#heroAnchor">Back to Top</a>
+        <a onclick="startOver()">Reset Theme</a>
     </footer>
     <script src="script/main.js"></script>
 </body>

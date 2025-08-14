@@ -1,0 +1,103 @@
+#bgColor
+{
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: color 3s;
+}
+
+.themeChooser
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    font-size: 5rem;
+    padding: 10% 0;
+}
+
+.themeChooser div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#animDiv
+{
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    z-index: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#animDiv.darkAnim
+{
+    background-color: black;
+    animation-name: switchDark;
+}
+
+#animDiv.darkAnim:hover
+{
+    font-size: 3rem;
+}
+
+#animDiv.lightAnim
+{
+    background-color: white;
+    animation-name: switchLight;
+}
+
+.lightFont
+{
+    color: black;
+}
+
+.darkFont
+{
+    color: white;
+}
+
+@keyframes switchDark
+{
+    from
+    {
+        right: 0;
+        width: 0%;
+    }
+    to
+    {
+        right: 0;
+        width: 100%;
+    }
+}
+
+@keyframes switchLight
+{
+    from
+    {
+        width: 0%;
+    }
+    to
+    {
+        width: 100%;
+    }
+}
+
+
+/* CSS for Mobile Screens --- 570px */
+@media only screen and (max-width: 570px)
+{
+    .themeChooser
+    {
+        flex-direction: column;
+        gap: 20vh;
+        justify-content: center;
+        align-items: space-between;
+    }
+}

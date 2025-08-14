@@ -1,0 +1,837 @@
+/* ----------------------- Global CSS ----------------------- */
+:root {
+    --main-accent-color: #EE3150;
+    --main-darker-accent-color: #921631;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", "Impact", serif;
+    /* overflow-x: hidden; */
+}
+
+/* -------- Tags -------- */
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-accent-color);
+    transition: 1s;
+}
+
+body[data-theme='dark']
+{
+    background-color: black;
+    color: white;
+}
+
+body[data-theme='light']
+{
+    background-color: white;
+    color: black;
+}
+
+header button#toggle
+{
+    border: none;
+    background-color: var(--main-accent-color);
+    font-size: 2rem;
+}
+
+header[data-theme='light'] button#toggle
+{
+    color: white;
+}
+
+header[data-theme='dark'] button#toggle
+{
+    color: rgb(0, 0, 0);
+}
+
+header[data-theme='light'] button#toggle:hover
+{
+    color: rgb(0, 0, 0);
+    background-color: var(--main-darker-accent-color);
+}
+
+header[data-theme='dark'] button#toggle:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: var(--main-darker-accent-color);
+}
+
+#homeFooter
+{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: var(--main-accent-color);
+    color: white;
+    position: absolute;
+    bottom: -200px;
+}
+
+#homeFooter a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#homeFooter a:hover
+{
+    color: white;
+}
+
+header
+{
+    width: 100%;
+    height: 120px;
+    /* min-height: 10%; */
+    gap: 10px;
+}
+
+header[data-theme='light']
+{
+    /* box-shadow: 0px 3px 3px 1px rgba(255, 255, 255, 0.5); */
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header[data-theme='dark']
+{
+    /* box-shadow: 0px 3px 3px 1px rgba(255, 255, 255, 0.5); */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navLogo
+{
+    height: 5vw;
+    width: auto;
+    margin: 20px 20px;
+}
+
+nav li
+{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+nav li a
+{
+    color: var(--main-accent-color);
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px 0 0 0;
+    border: transparent 3px solid;
+    border-bottom: var(--main-accent-color) 10px solid;
+}
+
+header[data-theme='dark'] nav li a:hover
+{
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0 0;
+    border: transparent 3px solid;
+    border-bottom: rgb(255, 255, 255) 10px solid;
+}
+
+header[data-theme='light'] nav li a:hover
+{
+    color: black;
+    border-radius: 10px 10px 0 0;
+    border: transparent 3px solid;
+    border-bottom: black 10px solid;
+}
+
+/* -------- ID's -------- */
+#alertSection
+{
+    top: 120px;
+    width: 35vw;
+    position: absolute;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#exploreButton
+{
+    background-color: var(--main-accent-color);
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    border: 5px solid white;
+    /* border: 5px solid var(--main-accent-color); */
+    border-radius: 50px;
+    box-shadow: black 1rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+#exploreButton:hover
+{
+    border: 5px solid black;
+    background-color: white;
+    color: var(--main-accent-color);
+    cursor: pointer;
+}
+
+#loadingSection
+{
+    width: 100%;
+    margin: 0 auto;
+    z-index: -998;
+}
+
+#loadingSection .homePage
+{
+    height: 100vh;
+}
+
+#header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    overflow: visible;
+}
+
+#heroContent
+{
+    position: absolute;
+    z-index: 4;
+}
+
+#heroGradient
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -995;   
+}
+
+#heroGradient[data-theme='light']
+{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#heroGradient[data-theme='dark']
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(255, 36, 36, 0.7); */
+}
+
+#heroSection
+{
+    z-index: -997;
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: end;
+    padding: 120px 2vw 0 0;
+    font-size: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heroSection[data-theme="light"]
+{
+    background-image: url(../res/HeroBannerLight.png);
+}
+
+#heroSection[data-theme="dark"]
+{
+    background-image: url(../res/HeroBannerDark.png);
+}
+
+#locationInput
+{
+    width: 80%;
+    height: 20px;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+#locationInput:focus
+{
+    border: none;
+    outline: none;
+}
+
+#locationInput::placeholder
+{
+    color: #33FFBB;
+}
+
+#menu
+{
+    align-self: flex-end;
+}
+
+#toggle
+{
+    text-decoration: none;
+    padding: 5px 12px;
+    margin: auto;
+    background-color: var(--main-accent-color);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    display: none;
+}
+
+#toggle:hover
+{
+    background-color: black;
+}
+
+#yesButton, #noButton, #locationButton
+{
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+#yesButton:hover, #noButton:hover, #locationButton:hover
+{
+    color: #33FFBB;
+}
+
+/* -------- Classes -------- */
+.hidden
+{
+    display: none;
+}
+
+.hideOverflow
+{
+    overflow-y: hidden;
+}
+
+.navBar
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.navName
+{
+    color: var(--main-accent-color);
+}
+
+.textHover:hover
+{
+    cursor: pointer;
+    transition: font-size 0.5s ease-out;
+    font-size: 1.5em;
+}
+
+.textContainer
+{
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textReader
+{
+    z-index: 2;
+    text-align: center;
+    width: 80%;
+}
+
+.weatherInfo
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.weatherInfo > h2
+{
+    font-size: 5rem;
+}
+
+/* ----------------------- CSS for Loading Logos ----------------------- */
+.logoLoading
+{
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    animation-name: logoLoading;
+    animation-duration: 2s;
+}
+
+.logoLoading img
+{
+    width: 100px;
+    height: auto;
+    transition: 0.5s;
+}
+
+.logoLoading img:hover
+{
+    cursor: pointer;
+    width: 150px;
+    transition: 0.5s;
+}
+
+.logoLeaving
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+    position: absolute;
+    animation-name: logoLeave;
+    animation-duration: 3s;
+}
+
+@keyframes logoLoading
+{
+    0% 
+    {
+        top: 100%;
+        opacity: 0%;
+    }
+    100% 
+    {
+        opacity: 100%;
+        top: 0;
+    }
+}
+
+@keyframes logoLeave
+{
+    0%
+    {
+        width: 150px;
+    }
+    25%
+    {
+        width: 100px;
+    }
+    90%
+    {
+        opacity: 100%;
+    }
+    100%
+    {
+        width: 1500vw;
+        opacity: 0%;
+    }
+}
+
+/* CSS for HEADER LOADING ANIMATION **/
+
+.headerLoading
+{
+    animation-name: headerLoading;
+    animation-duration: 2s;
+}
+
+@keyframes headerLoading
+{
+    0% 
+    {
+        top: -50%;
+        opacity: 0%;
+    }
+    100% 
+    {
+        opacity: 100%;
+        top: 0;
+    }
+}
+
+
+/* CSS for SECTION LEAVING */
+.sectionLeaving
+{
+    animation-name: sectionLeaving;
+    animation-duration: 1s;
+}
+
+@keyframes sectionLeaving
+{
+    from
+    {
+        opacity: 100%;
+    }
+    to
+    {
+        opacity: 0%;
+    }
+}
+
+/* CSS for Weather Card Loading */
+.weatherLoading
+{
+    animation-name: weatherLoading;
+    animation-duration: 2s;
+}
+
+@keyframes weatherLoading
+{
+    from
+    {
+        opacity: 0%;
+    }
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+/* ----------------------- Media Responsive CSS ----------------------- */
+
+/* CSS for Tablet Screens -- 1000px -- */
+@media only screen and (max-width: 1000px)
+{
+    button#toggle
+    {
+        display: block;
+        font-size: var(--h3-font-size);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        margin: 50px 5%;
+    }
+
+    button#toggle.active
+    {
+        background-color: var(--main-darker-accent-color);
+    }
+
+    #heroSection
+    {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroDescription
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #exploreButton
+    {
+        font-size: 2rem;
+    }
+
+    .navBar
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .navName
+    {
+        margin-top: -10px;
+    }
+
+    #menu
+    {
+        display: none;
+    }
+
+    #menu.active
+    {
+        overflow: visible;
+        width: 50%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: transparent 100px 100px solid;
+        border-radius: 0px 0 30px 30px;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 999;
+    }
+
+    header[data-theme='dark'] #menu.active
+    {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    header[data-theme='light'] #menu.active
+    {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    nav li
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li a
+    {
+        font-size: 30px;
+        border-bottom: none;
+        border-left: var(--main-accent-color) 10px solid;
+    }
+
+    header[data-theme='dark'] nav li a:hover
+    {
+        color: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        border: transparent 3px solid;
+        border-bottom: none;
+        border-left: white 10px solid;
+    }
+
+    header[data-theme='light'] nav li a:hover
+    {
+        color: black;
+        border-radius: 10px 10px 0 0;
+        border: transparent 3px solid;
+        border-bottom: none;
+        border-left: black 10px solid;
+    }
+
+    .weatherInfo
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .weatherInfo > h2
+    {
+        font-size: 3rem;
+    }
+
+    .weatherInfo .cardSubtitle
+    {
+        position: absolute;
+        align-self: flex-end;
+        text-align: end;
+        left: 20px;
+        top: 85px;
+    }
+
+    .weatherInfo .cardInfo
+    {
+        font-size: 1.4rem;
+    }
+
+    #alertSection article
+    {
+        top: 0px;
+        position: absolute;
+        font-size: 2rem;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+/* CSS for Mobile Screens --- 570px */
+@media only screen and (max-width: 570px)
+{
+    h1
+    {
+        font-size: 10vw;
+    }
+
+    button#toggle
+    {
+        display: block;
+        font-size: var(--h3-font-size);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        margin: 50px 5%;
+    }
+
+    button#toggle.active
+    {
+        background-color: var(--main-darker-accent-color);
+    }
+
+    header
+    {
+        position: fixed;
+    }
+
+    #heroSection
+    {
+        padding: 0;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroTitle
+    {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .heroDescription
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .navBar
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+
+    #menu
+    {
+        display: none;
+    }
+
+    #menu.active
+    {
+        overflow: visible;
+        width: 100%;
+        height: 30vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: transparent 100px 100px solid;
+        border-radius: 0 0 30px 30px;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 999;
+    }
+
+    nav ul
+    {
+        text-align: center;
+        width: 80%;
+    }
+
+    nav li
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li a
+    {
+        padding: 5%;
+        font-size: 30px;
+        border-left: none;
+    }
+
+    header[data-theme='dark'] nav li a:hover
+    {
+        border: none;
+    }
+
+    header[data-theme='light'] nav li a:hover
+    {
+        border: none;
+    }
+
+    .weatherInfo
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .weatherInfo > h2
+    {
+        font-size: 3rem;
+    }
+
+    .weatherInfo .cardSubtitle
+    {
+        position: absolute;
+        align-self: flex-end;
+        text-align: end;
+        left: 20px;
+        top: 85px;
+    }
+
+    .weatherInfo .cardInfo
+    {
+        font-size: 1.4rem;
+    }
+
+    #alertSection article
+    {
+        top: 0px;
+        position: absolute;
+        font-size: 2rem;
+        padding: 20px;
+        width: 100%;
+    }
+}

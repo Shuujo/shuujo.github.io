@@ -1,0 +1,418 @@
+/* ----------------------- About Section CSS ----------------------- */
+#sectionTitle
+{
+    user-select: none;
+    padding: 0 20px;
+    text-indent: 20px;
+    font-size: 3rem;
+    text-shadow: var(--main-accent-color) 2px 2px;
+}
+
+
+.anchor
+{
+    top: -120px;
+    position: relative;
+    display: block;
+    visibility: hidden;
+}
+
+.sectionCenter
+{
+    width: 80%;
+    margin: auto;
+}
+
+.sectionCenter p
+{
+    font-size: 1rem;
+}
+
+#loadingSection
+{
+    top: 120px;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+#loadingSection[data-theme="light"] #cardSection .cards .card-elevation
+{
+    box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.795);
+}
+
+#loadingSection[data-theme="dark"] #cardSection .cards .card-elevation
+{
+    box-shadow: 10px 10px 1px 0px rgba(255, 255, 255, 0.795);
+}
+
+#loadingSection[data-theme="light"] #cardSection #sectionTitle h1
+{
+    color: black;
+}
+
+#loadingSection[data-theme="dark"] #cardSection #sectionTitle h1
+{
+    color: white;
+}
+
+#cardSection, #videoSection
+{
+    margin: 200px 0px;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card
+{
+    background-color: var(--main-accent-color);
+    padding: 2vw;
+    border-radius: 8px;
+    width: 25vw;
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#loadingSection[data-theme='light'] #cardSection .cards .card
+{
+    color: white;
+}
+
+#loadingSection[data-theme='dark'] #cardSection .cards .card
+{
+    color: black;
+}
+
+#loadingSection[data-theme='dark'] #cardSection .cards .card h2
+{
+    font-size: 3rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+}
+
+#loadingSection[data-theme='light'] #cardSection .cards .card h2
+{
+    font-size: 3rem;
+    color: black;
+    text-shadow:  var(--main-accent-color) 2px 2px;
+}
+
+.card h3
+{
+    text-decoration: underline;
+    font-size: 2rem;
+
+}
+
+#loadingSection[data-theme='dark'] #cardSection .cards .card h4
+{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+}
+
+#loadingSection[data-theme='light'] #cardSection .cards .card h4
+{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-shadow:  var(--main-accent-color) 2px 2px;
+}
+
+#loadingSection[data-theme='dark'] #cardSection .cards .card h5
+{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+}
+
+#loadingSection[data-theme='light'] #cardSection .cards .card h5
+{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-shadow:  var(--main-accent-color) 2px 2px;
+}
+
+.card ul
+{
+    list-style: none;
+}
+
+.card ul li
+{
+    margin: 20px 0;
+}
+
+.card p
+{
+    text-indent: 20px;
+    font-size: 20px;
+}
+
+.card-button
+{
+    color: white;
+    width: 150px;
+    background-color: rgb(74, 69, 94);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    border: 1px solid transparent;
+}
+
+.card-button:hover
+{
+    border: 1px solid rgb(74, 69, 94);
+    color: rgb(74, 69, 94);
+    background-color: white;
+}
+
+.cardImage
+{
+    width: 100%;
+}
+
+.cardImage img
+{
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+#pageFooter
+{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: var(--main-accent-color);
+    color: white;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#pageFooter a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#pageFooter a:hover
+{
+    color: white;
+}
+
+/* ----------------------- Content Section CSS ----------------------- */
+#contentSection
+{
+    padding: 200px 0;
+    width: 100%;
+    margin: auto;
+    background-color: var(--main-accent-color);
+}
+
+.illustrations
+{
+    user-select: none;
+    background-color: white;
+    display: grid;
+    margin: 0 10%;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "one four four four"
+    "one four four four"
+    "two five five zero"
+    "two five five zero"
+    "three three three three"
+    "three three three three";
+}
+
+.zero
+{
+    grid-area: zero;
+}
+
+.one
+{
+    grid-area: one;
+}
+
+.two
+{
+    grid-area: two;
+}
+
+.three
+{
+    grid-area: three;
+}
+
+.four
+{
+    grid-area: four;
+}
+
+.five
+{
+    grid-area: five;
+}
+
+.gridImage 
+{
+    height: 100%;
+    border: black 10px solid;
+    overflow: hidden;
+}
+
+.gridImage img 
+{
+    overflow: hidden;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+/* ----------------------- Video Section CSS ----------------------- */
+#videoSection
+{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#videoSection video
+{
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+    z-index: 1;
+}
+
+/* ----------------------- Contact Me Section CSS ----------------------- */
+#contactSection
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#loadingSection[data-theme="light"] #contactSection
+{
+    background-color: white;
+}
+
+#loadingSection[data-theme="dark"] #contactSection
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.contactTable
+{
+    padding-top: 20px;
+    font-size: 3vw;
+    width: 50%;
+}
+
+.contactTable table
+{
+    width: 100%;
+}
+
+.contactTable table tr td
+{
+    text-align: start;
+}
+
+.contactTable table tr td.link
+{
+    text-align: end;
+}
+
+.link a
+{
+    text-decoration: none;
+    color: var(--main-accent-color);
+}
+
+.link a:hover
+{
+    color: #921631;
+}
+
+/* ----------------------- Media Responsive CSS ----------------------- */
+
+/* CSS for Tablet Screens -- 1000px -- */
+@media only screen and (max-width: 1000px)
+{
+    .cards
+    {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card
+    {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .cardImage img
+    {
+        width: 80%;
+        margin: 10%;
+
+
+        height: auto;
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
+
+    #cardSection
+    {
+        height: auto;
+    }
+}
+
+/* CSS for Mobile Screens --- 570px */
+@media only screen and (max-width: 570px)
+{
+    .cards
+    {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card
+    {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .cardImage img
+    {
+        width: 80%;
+        margin: 10%;
+        height: auto;
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
+
+    #cardSection
+    {
+        height: auto;
+    }
+}
