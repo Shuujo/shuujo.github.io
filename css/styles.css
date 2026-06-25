@@ -9,14 +9,22 @@
 
 @font-face
 {
-    font-family: Swansea;
-    src: url('Swansea-q3pd.ttf');
+    font-family: 'Swansea';
+    src: url('Swansea-q3pd.ttf') format('truetype'),
+            url('SwanseaItalic-AwqD.ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'SwanseaBold';
+    src: url('SwanseaBold-D0ox.ttf') format('truetype'),
+            url('SwanseaBoldItalic-p3Dv.ttf') format('truetype');
 }
 
 @font-face
 {
-    font-family: The Youngest;
-    src: url('The Youngest Script-Rg.ttf');
+    font-family: 'The Youngest';
+    src: url('The Youngest Script-Rg.ttf') format('truetype');
 }
 
 *
@@ -24,7 +32,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Swansea;
+    font-family: 'SwanseaBold';
+    font-weight: bold;
     scroll-behavior: smooth;
 }
 
@@ -188,7 +197,7 @@ a:hover
 {
     margin-top: -10vw;
     font-size: 10vw;
-    font-family: The Youngest;
+    font-family: 'The Youngest';
     font-style: 'Script';
     font-weight: 100;
     text-align: center;
