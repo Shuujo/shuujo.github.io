@@ -10,13 +10,13 @@
 @font-face
 {
     font-family: Swansea;
-    src: url('css/Swansea-q3pd.ttf');
+    src: url('../css/Swansea-q3pd.ttf');
 }
 
 @font-face
 {
     font-family: The Youngest;
-    src: url('css/The Youngest Script-Rg.ttf');
+    src: url('../css/The Youngest Script-Rg.ttf');
 }
 
 *
