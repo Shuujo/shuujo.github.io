@@ -605,3 +605,32 @@ img.banners
     padding: 10px;
     width: 100px;
 }
+
+/* Contact */
+
+.contact
+{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.contact table
+{
+    height: 20vh;
+    width: 100%;
+    font-size: larger;
+}
+
+.contact table tbody tr td.link
+{
+    text-align: start;
+    width: 50%;
+}
+
+.contact table tbody tr td
+{
+    text-align: end;
+    padding: 15px;
+    width: 50%;
+}
