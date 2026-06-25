@@ -2,12 +2,12 @@ const SHOWCASE_IMG = document.getElementById('msi');
 const UPDATE_TIME_INTERVAL = 10000;
 
 const imagesArray = [
-  '/res/portfolio pieces/OC 2021.png',
-  '/res/portfolio pieces/Magazine/Pahang\,\ Josh\ -\ Magazine5.png',
-  '/res/portfolio pieces/1080x1350.png',
-  '/res/portfolio pieces/Enter the Demons Den.png',
-  '/res/portfolio pieces/SunPeel/SunPeel Social Media Ads_Facebook 1080x1350.png',
-  '/res/portfolio pieces/Magazine/Pahang, Josh - Magazine.png'
+  'res/portfolio pieces/OC 2021.png',
+  'res/portfolio pieces/Magazine/Pahang\,\ Josh\ -\ Magazine5.png',
+  'res/portfolio pieces/1080x1350.png',
+  'res/portfolio pieces/Enter the Demons Den.png',
+  'res/portfolio pieces/SunPeel/SunPeel Social Media Ads_Facebook 1080x1350.png',
+  'res/portfolio pieces/Magazine/Pahang, Josh - Magazine.png'
 ];
 
 let i = 0;
