@@ -10,13 +10,13 @@
 @font-face
 {
     font-family: Swansea;
-    src: url('../shuujo.github.io/css/Swansea-q3pd.ttf');
+    src: url('Swansea-q3pd.ttf');
 }
 
 @font-face
 {
     font-family: The Youngest;
-    src: url('../shuujo.github.io/css/The Youngest Script-Rg.ttf');
+    src: url('The Youngest Script-Rg.ttf');
 }
 
 *
@@ -61,6 +61,17 @@ body
     height: 100vh;
     /* background-color: var(--main-accent-color); */
     overflow-x: hidden;
+}
+
+a
+{
+    color: var(--main-accent-color);
+    
+}
+
+a:hover
+{
+    color: var(--main-darker-accent-color);
 }
 
 #nav
