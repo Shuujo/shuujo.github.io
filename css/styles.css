@@ -564,3 +564,44 @@ img.banners
     transform: scale(105%);
     transition: 0.2s ease-in-out;
 }
+
+/* About Me Background*/
+
+.about-background
+{
+    position: absolute; 
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-image: url('../res/portfolio\ pieces/Medge.png');
+}
+
+.about-bio
+{
+    width: 35vw;
+    height: 80vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(238, 49, 80, 0.8); */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-left: #EE3150 solid 5px;
+    border-top: #EE3150 solid 5px;
+    border-top-left-radius: 2vw;
+    padding: 2vw;
+    overflow: scroll;
+}
+
+.icons
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons img
+{
+    padding: 10px;
+    width: 100px;
+}
