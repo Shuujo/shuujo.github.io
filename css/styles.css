@@ -129,7 +129,6 @@ a:hover
 {
     display: flex;
     justify-content: space-between;
-    z-index: 99;
     width: 90%;
     height: 70vh;
     margin: auto;
@@ -142,6 +141,8 @@ a:hover
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .main-second-half
@@ -151,11 +152,14 @@ a:hover
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
+    z-index: -1;
 }
 
 .main-profile-img
 {
     max-width: 10vw;
+    
 }
 
 .main-profile-bio
@@ -590,7 +594,7 @@ img.banners
     border-left: #EE3150 solid 5px;
     border-top: #EE3150 solid 5px;
     border-top-left-radius: 2vw;
-    padding: 2vw;
+    padding: 2vw 2vw 4vw 2vw;
     overflow: scroll;
 }
 
@@ -633,4 +637,27 @@ img.banners
     text-align: end;
     padding: 15px;
     width: 50%;
+}
+
+/* Videos */
+
+.video-stacked
+{
+    position: absolute;
+}
+
+.video-stacked video
+{
+    position: fixed;
+}
+
+#video-alpha
+{
+    mask-mode: alpha;
+    opacity: 1;
+}
+
+.video-rgb
+{
+    opacity: 0.5;
 }
