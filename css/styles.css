@@ -163,7 +163,7 @@ a:hover
     height: inherit;
     position: absolute;
     
-    z-index: -9999;
+    /* pointer-events: none; */
 }
 
 .main-bg-logo
@@ -192,13 +192,15 @@ a:hover
 .main-container
 {
     display: flex;
+    /* position: relative; */
     justify-content: space-between;
     width: 90%;
     height: 70vh;
     margin: auto;
     margin-top: 10vh;
-    z-index: 1;
+    overflow-y: scroll;
 }
+
 
 .main-first-half
 {
@@ -218,7 +220,7 @@ a:hover
     align-items: center;
     gap: 10px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 .main-profile-img
@@ -254,6 +256,7 @@ a:hover
 {
     width: 100vw;
     height: 100vh;
+    /* pointer-events: none; */
     /* background-color: var(--main-accent-color); */
 }
 
