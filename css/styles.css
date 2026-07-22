@@ -199,6 +199,7 @@ a:hover
     margin: auto;
     margin-top: 10vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -225,7 +226,7 @@ a:hover
 
 .main-profile-img
 {
-    max-width: 10vw;
+    max-width: 20vw;
     
 }
 
@@ -365,6 +366,36 @@ a:hover
         transform: translateX(calc(-100% - var(--gap)));
     }
 }
+
+/* Main Profile Picture Rotate*/
+
+.rotate
+{
+    animation: rotate 30s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+  }
+
 
 /* Slideshow Handler */
 
