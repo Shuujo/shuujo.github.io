@@ -263,6 +263,7 @@ a:hover
 .main-hero-title-1
 {
     font-size: 15vw;
+    user-select: none;
 }
 
 .main-hero-title-2
@@ -273,6 +274,7 @@ a:hover
     font-style: 'Script';
     font-weight: 100;
     text-align: center;
+    user-select: none;
     color: var(--main-accent-color);
 }
 
@@ -281,6 +283,7 @@ a:hover
     margin-top: -10vw;
     font-size: 15vw;
     text-align: end;
+    user-select: none;
 }
 
 .star
@@ -385,7 +388,7 @@ a:hover
     background-color: var(--main-accent-color);
     width: 90%;
     height: 15vw;
-    margin: -10vw auto auto auto;
+    margin: -8vw auto auto auto;
     border-radius: 10vw;
     overflow: hidden;
     z-index: -99;
@@ -611,13 +614,116 @@ img.banners
     height: auto;
 }
 
-.project-showcase-pics img:hover
+.project-main-picture img:hover, .project-showcase-pics img:hover
 {
     transform: scale(105%);
     transition: 0.2s ease-in-out;
+    filter: drop-shadow(0px 0px 5px var(--main-accent-color));
+    cursor: pointer;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    animation: pulse 20s infinite;
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: 100%;
+    max-height: 70vh;
+    max-width: 80vw;
+    object-fit: contain;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+  }
+
+  @-webkit-keyframes pulse {
+    0%, 100% {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      50% {
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      50% {
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--main-darker-accent-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 /* About Me Background*/
+
+.red-text
+{
+    color: var(--main-accent-color);
+}
+
+.darker-text
+{
+    color: var(--main-darker-accent-color);
+}
 
 .about-background
 {
@@ -731,16 +837,19 @@ img.banners
     .main-first-half
     {
         justify-content: center;
+        pointer-events: none;
     }
 
     .main-hero-title-1
     {
         font-size: 25vw;
+        user-select: none;
     }
 
     .main-hero-title-3
     {
         font-size: 25vw;
+        user-select: none;
     }
 
     .main-second-half
