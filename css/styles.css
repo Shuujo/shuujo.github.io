@@ -241,10 +241,13 @@ a:hover
 {
     background-color: var(--main-accent-color);
     font-weight: bold;
+    font-size: var(--font-size);
     color: var(--white);
-    padding: 5px 15px 5px 15px;
+    padding: 5px 35px 5px 35px;
     border: none;
     border-radius: 10vw;
+    width: 100%;
+    filter: drop-shadow(10px 5px black);
 }
 
 .main-profile-button:hover
@@ -423,6 +426,7 @@ a:hover
     border-radius: 10vw;
     overflow: hidden;
     z-index: -99;
+    filter: drop-shadow(40px 20px black);
 }
 
 img#msi
