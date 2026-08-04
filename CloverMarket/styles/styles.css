@@ -1,0 +1,803 @@
+:root
+{
+    --main-accent-color: #C5DA56;
+    --main-darker-accent-color: #096148;
+    --main-lighter-accent-color: #FEF8E7;
+    --pink-accent-color: #F494AD;
+    --white: #FFFFFF;
+    --font-size-body: clamp(12px, 2.5vw, 20px);
+    --font-size-header: clamp(32px, 8vw, 80px);
+
+    --merch-color: #C09AC7;
+    --artist-color: #62ACDF;
+    --food-color: #FBB15E;
+    --performer-color: #D52027;
+}
+
+
+@font-face
+{
+    font-family: 'Alphabet Soup';
+    src: url('../res/fonts/T.H.\ Alphabet\ Soup\ Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Felt Tip Woman';
+    src: url('../res/fonts/Felt\ Tip\ Woman\ Regular.ttf') format('truetype');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alphabet Soup';
+    /* font-weight: bold; */
+    scroll-behavior: smooth;
+    font-size: var(--font-size-body);
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+
+    /* top right bottom left*/
+    padding: 20px;
+    background-color: var(--main-lighter-accent-color);
+}
+
+html
+{
+    font-size: var(--font-size);
+}
+
+body
+{
+    width: 100vw;
+
+    font-size: var(--font-size-body);
+    font-family: 'Felt Tip Woman';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--main-lighter-accent-color);
+    overflow-x: hidden;
+}
+
+h1
+{
+    font-size: var(--font-size-header);
+}
+
+a
+{
+    color: var(--main-accent-color);
+    
+}
+
+a:hover
+{
+    color: var(--pink-accent-color);
+}
+
+#nav
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#nav ul
+{
+    gap: 20px;
+}
+
+#nav li
+{
+    padding: 10px;
+    list-style-type: none;
+}
+
+#nav li a
+{
+    font-family: 'Felt Tip Woman';
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--main-darker-accent-color);
+}
+
+#nav li a:hover
+{
+    color: var(--pink-accent-color);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.header-logo
+{
+    width: 200px;
+    padding: 1vw;
+}
+
+.header-logo-name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-logo-name span
+{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.main-hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70vh;
+
+    background-image: url('../res/assets/Poster.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-hero h1
+{
+    font-size: var(--font-size-header);
+    color: var(--pink-accent-color);
+}
+  
+.main-hero p
+{
+    margin: 0 10vw ;
+    margin-bottom: 20px;
+    font-family: 'Felt Tip Woman';
+    font-size: var(--font-size-body);
+    color: var(--white)
+}
+
+.main-hero button
+{
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    border-radius: 50vw;
+    background-color: var(--main-accent-color);
+}
+
+.main-hero button:hover
+{
+    background-color: var(--main-darker-accent-color);
+    transition: 0.5s;
+}
+
+.bg-filter
+{
+    background-color: rgb(103, 148, 157);
+    background-blend-mode: multiply;
+}
+
+.main-socials
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+
+    background: url(../res/assets/BG_Assets_2.png);
+    background-size: cover;
+    background-position: center;
+    /* background-color: #096148; */
+}
+
+.main-socials h1
+{
+    color: var(--main-darker-accent-color);
+}
+
+.main-what-is
+{
+    padding: 5vh 0;
+    background-color: var(--main-darker-accent-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-lighter-accent-color);
+}
+
+.main-what-body p
+{
+    font-family: 'neutronic-rounded';
+}
+
+ul.main-what-bullet
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10vw;
+}
+
+.main-what-bullet li
+{
+    font-family: 'Felt Tip Woman';
+    font-size: 3vw;
+}
+
+.main-what-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 55vw;
+    padding-left: 2vw;
+}
+
+.main-what-right
+{
+    width: 45vw;
+}
+
+.main-what-right-img-cont
+{
+    width: auto;
+    height: 100%;
+    background-color: #89ffde;
+    border-radius: 10vw 0 0 10vw;
+    background-image: url('../res/assets/Calgary.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-what-header-img
+{
+    width: 20vw;
+}
+
+.main-vendors
+{
+    display: flex;
+    width: 100%;
+    padding: 5vh 2vw;
+}
+
+.main-vendors img 
+{
+    width: calc((100vw / 4) - 2vw);
+}
+
+.main-vendors h2
+{
+    width: 100%;
+    text-align: center;
+}
+
+.main-vendors-merch
+{
+    color: var(--merch-color);
+}
+
+.main-vendors-artist
+{
+    color: var(--artist-color);
+}
+
+.main-vendors-food
+{
+    color: var(--food-color);
+}
+
+.main-vendors-performer
+{
+    color: var(--performer-color);
+}
+
+@keyframes scroll 
+{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    background-color: var(--pink-accent-color);
+}
+
+footer p
+{
+    font-size: 12px;
+}
+
+.footer-logo
+{
+    width: 30vw;
+    padding: 1vw;
+}
+
+.footer-left
+{
+    width: 20%;
+    display: flex;
+}
+
+.footer-right
+{
+    width: 30%;
+}
+
+.footer-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.footer-icons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons img
+{
+    width: 30px;
+}
+
+.footer-newsletter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 5px;
+}
+
+.footer-newsletter input
+{
+    background-color: var(--main-accent-color);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 25vw;
+    width: 70%;
+}
+
+.footer-newsletter button
+{
+    color: var(--white);
+    font-size: 12px;
+    padding: 10px;
+    width: 40%;
+    border: none;
+    border-radius: 50vw;
+    background-color: var(--main-darker-accent-color);
+}
+
+.footer-newsletter button:hover
+{
+    background-color: var(--main-accent-color);
+    transition: 0.5s;
+}
+
+/* Events Page */
+
+.event-upcoming, .event-map
+{
+    padding: 5vh 0;
+    background-color: var(--main-lighter-accent-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-darker-accent-color);
+}
+
+.event-body p, .map-body p
+{
+    font-family: 'neutronic-rounded';
+}
+
+ul.event-bullet, ul.map-bullet
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2vw;
+}
+
+.event-bullet li, .map-bullet li
+{
+    font-family: 'Felt Tip Woman';
+    font-size: 3vw;
+}
+
+.event-left, .map-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 55vw;
+    padding-left: 2vw;
+}
+
+.event-right, .map-right
+{
+    width: 45vw;
+}
+
+.event-right img
+{
+    width: 100%;
+}
+
+.event-right-upcoming-img, .event-right-map-img
+{
+    width: auto;
+    height: 100%;
+    background-color: #89ffde;
+    border-radius: 10vw 0 0 10vw;
+    background-image: url('../res/assets/Poster.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Schedule Section*/
+
+.event-schedule
+{
+    padding: 5vh 0;
+    background-color: var(--main-darker-accent-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-lighter-accent-color);
+}
+
+.schedule-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.schedule-body > div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.schedule-body div img
+{
+    width: 10vw;
+}
+
+.schedule-body p
+{
+    font-family: 'neutronic-rounded';
+}
+
+.schedule-left
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 55vw;
+    padding-left: 2vw;
+}
+
+.schedule-right
+{
+    width: 45vw;
+    height: 55vw;
+}
+
+.schedule-right-upcoming-img
+{
+    width: auto;
+    height: 100%;
+    background-color: #89ffde;
+    border-radius: 10vw 0 0 10vw;
+    background-image: url('../res/assets/Performance\ Schedule.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.event-right-map-img
+{
+    width: auto;
+    height: 100%;
+    background-color: var(--main-lighter-accent-color);
+    border-radius: 10vw 0 0 10vw;
+    background-image: url('../res/assets/SVG/Map.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Application Page */
+
+.application
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+
+    background: url(../res/assets/BG_Assets.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.application p
+{
+    width: 80%;
+    text-align: center;
+    font-family: 'Felt Tip Woman';
+}
+
+.application-header
+{
+    color: var(--main-darker-accent-color)
+}
+
+.application-buttons
+{
+    display: flex;
+    padding: 2vw;
+    gap: 50px;
+}
+
+.application-buttons button
+{
+    padding: 1vw 3vw;
+    border: none;
+    border-radius: 25vw;
+    color: white;
+}
+
+.application-vendor-button
+{
+    background-color: var(--pink-accent-color);
+}
+
+.application-vendor-button:hover
+{
+    background-color: var(--main-darker-accent-color);
+    transition: 0.5s;
+}
+
+.application-volunteer-button
+{
+    background-color: var(--main-accent-color);
+}
+
+.application-volunteer-button:hover
+{
+    background-color: var(--main-darker-accent-color);
+    transition: 0.5s;
+}
+
+
+/* Information Pages .. Vendor.html*/
+
+.merch-grad-color
+{
+    background: linear-gradient(90deg, var(--merch-color) 0%, var(--artist-color) 100%);
+}
+
+.main-color
+{
+    background-color: var(--main-accent-color);
+}
+
+.merch-color
+{
+    background-color: var(--merch-color);
+}
+
+.artist-color
+{
+    background-color: var(--artist-color);
+}
+
+.food-color
+{
+    background-color: var(--food-color);
+}
+
+.performer-color
+{
+    background-color: var(--performer-color);
+}
+
+.apply-buttons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.apply-buttons button
+{
+    padding: 1vw 3vw;
+    border: none;
+    border-radius: 25vw;
+    color: white;
+}
+
+.cost-container
+{
+    width: 100%;
+}
+
+.cost-container h3
+{
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 50vw;
+    margin-bottom: 1vw;
+}
+
+.cost-row
+{
+    display: flex;
+    gap: 10vw;
+    padding-bottom: 5vw;
+}
+
+.cost-row h4
+{
+    font-family: "neutronic-rounded",sans-serif;
+}
+
+.cost-row ul li
+{
+    font-family: "neutronic-rounded",sans-serif;
+}
+
+.faq
+{
+    background-color: var(--main-accent-color);
+    padding: 15px;
+}
+
+.faq h3
+{
+    color: var(--main-darker-accent-color);
+}
+
+.faq p
+{
+    font-family: "neutronic-rounded",sans-serif;
+    margin-bottom: 4vw;
+}
+
+.vendor-header
+{
+    color: var(--pink-accent-color);
+}
+
+.volunteer-header
+{
+    color: var(--main-accent-color);
+}
+
+.information-header
+{
+    color: var(--main-darker-accent-color);
+}
+
+.information-vendor > h2
+{
+    font-size: var(--font-size-header);
+    font-family: 'Felt Tip Woman';
+    color: var(--main-darker-accent-color);
+}
+
+.welcome
+{
+    width: 80%;
+    margin: auto;
+}
+
+.welcome-vendor
+{
+    display: flex;
+}
+
+.welcome-vendor > img
+{
+    width: 50%;
+}
+
+/* Contact Page */
+
+.contact-bullet
+{
+    list-style-type: none;
+}
+
+.contact-bullet li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1vw;
+}
+
+.contact-bullet li img
+{
+    width: 7vw;
+}
+
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * neutronic-rounded:
+ *   - http://typekit.com/eulas/0000000000000000775f11af
+ *   - http://typekit.com/eulas/0000000000000000775f11b2
+ * neutronic-rounded-black:
+ *   - http://typekit.com/eulas/0000000000000000775f11b7
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2026-07-13 18:12:53 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=dva1dyo&ht=tk&f=62176.62179.62184&a=273458918&app=typekit&e=css");
+
+@font-face {
+    font-family:"neutronic-rounded";
+    src:url("https://use.typekit.net/af/cd4d38/0000000000000000775f11af/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/cd4d38/0000000000000000775f11af/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/cd4d38/0000000000000000775f11af/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+    font-family:"neutronic-rounded";
+    src:url("https://use.typekit.net/af/64e20f/0000000000000000775f11b2/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/64e20f/0000000000000000775f11b2/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/64e20f/0000000000000000775f11b2/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+    font-family:"neutronic-rounded-black";
+    src:url("https://use.typekit.net/af/81781e/0000000000000000775f11b7/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/81781e/0000000000000000775f11b7/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/81781e/0000000000000000775f11b7/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+}
+
+.tk-neutronic-rounded { font-family: "neutronic-rounded",sans-serif; }
+.tk-neutronic-rounded-black { font-family: "neutronic-rounded-black",sans-serif; }
