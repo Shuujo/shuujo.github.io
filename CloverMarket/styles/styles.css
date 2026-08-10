@@ -748,13 +748,14 @@ ul.event-bullet, ul.map-bullet
     list-style-type: none;
 }
 
-.contact-bullet li
+.contact-bullet li a
 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 1vw;
+    text-decoration: none;
 }
 
 .contact-bullet li img
