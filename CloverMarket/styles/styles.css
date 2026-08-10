@@ -121,6 +121,14 @@ a:hover
     text-decoration: underline;
 }
 
+.nav-toggle
+{
+    font-size: 50px;
+    color: var(--main-darker-accent-color);
+    display: none;
+    cursor: pointer;
+}
+
 .header-logo
 {
     width: 200px;
@@ -462,7 +470,7 @@ ul.event-bullet, ul.map-bullet
 {
     width: auto;
     height: 100%;
-    background-color: #89ffde;
+    background-color: var(--main-darker-accent-color);
     border-radius: 10vw 0 0 10vw;
     background-image: url('../res/assets/Poster.png');
     background-position: center;
@@ -523,7 +531,7 @@ ul.event-bullet, ul.map-bullet
 {
     width: auto;
     height: 100%;
-    background-color: #89ffde;
+    background-color: var(--main-accent-color);
     border-radius: 10vw 0 0 10vw;
     background-image: url('../res/assets/Performance\ Schedule.jpg');
     background-position: center;
@@ -763,6 +771,56 @@ ul.event-bullet, ul.map-bullet
     width: 7vw;
 }
 
+@media (max-width: 767px) 
+{
+    #nav
+    {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        background-color: var(--main-accent-color);
+        top: 15vh;
+        left: 0;
+        margin: none;
+        padding: none;
+        border-top: 2px solid var(--main-darker-accent-color);
+        border-bottom: 2px solid var(--main-darker-accent-color);
+    }
+
+    #nav.active
+    {
+        display: flex !important;
+    }
+
+    #nav > li
+    {
+        width: 100vw;
+        /* background-color: var(--main-darker-accent-color); */
+    }
+
+    #nav > li:hover
+    {
+        background-color: var(--main-accent-color);
+        transition: 0.2s;
+    }
+
+    #nav > li > a
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    
+
+    .nav-toggle
+    {
+        display: inline;
+    }
+}
 
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
