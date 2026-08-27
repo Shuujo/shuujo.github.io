@@ -41,13 +41,19 @@ const popUpInterval =  setInterval(function()
     // Bottom Half of Pop Up Ad
     var popUpDiv = document.createElement("div");
     popUpDiv.classList.add('pop-up-bottom')
-    var popUpWidth = "30vw";
-    var popUpHeight = "30vh";
+    const WIDTH_POP = "30vw";
+    const HEIGHT_POP = "30vh";
+    var popUpWidth = WIDTH_POP;
+    var popUpHeight = HEIGHT_POP;
+
+    // var popUpWidth = "660px";
+    // var popUpHeight = "360px";
     var screenWidth = screenSizeRandWidth();
     var screenHeight = screenSizeRandHeight();
 
     popUpDiv.style.width = popUpWidth;
-    popUpDiv.style.height = popUpHeight;
+    popUpDiv.style.height = "auto";
+    popUpDiv.style.aspectRatio = "16 / 9";
 
     var calcTop = `clamp(0px, calc(${screenHeight}px - ${popUpHeight}), ${window.innerHeight}px)`;
     var calcLeft = `clamp(0px, calc(${screenWidth}px - ${popUpWidth}), ${window.innerWidth}px)`;
