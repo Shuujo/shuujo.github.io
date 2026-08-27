@@ -1,5 +1,3 @@
-
-
 const SHOWCASE_IMG = document.getElementById('msi');
 const UPDATE_TIME_INTERVAL = 2000;
 
@@ -13,15 +11,19 @@ const imagesArray = [
   ];
 
 // =============== IMAGE POP-UPS ===============
-const MAX_POPUPS = 5;
-var popUpCounter = 0;
+const MAX_POPUPS = 15;
+const REPEAT_TIME_INTERVAL = 100;
+let popUpBool = true;
 var popUpCanvas = document.getElementById("main-pop-ups");
+let popUpCounter = 0;
 
-setInterval(function() 
+
+const popUpInterval =  setInterval(function() 
 {
-    if (popUpCounter >= MAX_POPUPS)
+    if (popUpCounter > MAX_POPUPS)
     {
         popUpCanvas.firstElementChild.remove();
+        popUpCounter--;
     }   
     
     var popUpContainer = document.createElement("div");
@@ -66,13 +68,69 @@ setInterval(function()
     popUpContainer.appendChild(popUpTopBar);
     popUpContainer.appendChild(popUpDiv);
     popUpCanvas.appendChild(popUpContainer);
-    popUpCounter++;
+    
 
+    var randomizer = Math.floor(Math.random() * 5);
+    // var randomizer = 5;
+    var loop_counter = 1;
+    const MARGIN_MULT = '10';
+
+    console.log(randomizer);
+
+    setInterval(function()
+    {
+        if(randomizer != 0)
+        {
+            if (popUpCounter > MAX_POPUPS)
+            {
+                popUpCanvas.firstElementChild.remove();
+                popUpCounter--;
+            }  
+
+            var popUpCopy = popUpContainer.cloneNode(true);
+            popUpCopy.style.marginTop = `${loop_counter * MARGIN_MULT}px`;
+            popUpCopy.style.marginLeft = `${loop_counter * MARGIN_MULT}px`;
+            
+            popUpCanvas.appendChild(popUpCopy);
+
+            loop_counter++;
+            popUpCounter++;
+            randomizer--;
+        }
+    }, REPEAT_TIME_INTERVAL);
+    popUpCounter++;
+    
+
+    
 }, UPDATE_TIME_INTERVAL);
 
 
+// =============== POP UP CLOSE HANDLER ===============
+document.addEventListener('click', (event) => {
+    if (event.target.matches('.pop-up-close')) 
+    {
+        event.target.parentElement.parentElement.remove();
+        popUpCounter--;
+    }
+  });
 
+  // =============== ADBLOCKER  HANDLER ===============
+document.addEventListener('click', (event) => {
+    if (event.target.matches('#main-adblock')) 
+    {
+        popUpBool = popUpBool ? false : true;
+        document.getElementById("main-pop-ups").classList.toggle("hidden");
 
+        if(popUpBool)
+        {
+            document.getElementById("main-adblock").innerHTML = "disable ads?"
+        }
+        else
+        {
+            document.getElementById("main-adblock").innerHTML = "enable ads?"
+        }
+    }
+  });
 
 
 // =============== HEADER CLICK BACK TO INDEX.HTML ===============

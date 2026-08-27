@@ -148,6 +148,11 @@ a:hover
 {
     text-decoration: none;
     color: black;
+    text-shadow: 
+    -2px -2px 3px #FFF,  
+     2px -2px 3px #FFF,
+    -2px  2px 3px #FFF,
+     2px  2px 3px #FFF;
 }
 
 #nav li a:hover
@@ -244,11 +249,11 @@ a:hover
 .main-hero-title
 {
     width: 80%;
+    font-size: 0px;
 }
 
 .main-hero-title-1
 {
-    font-size: 15vw;
     user-select: none;
 }
 
@@ -267,9 +272,84 @@ a:hover
 .main-hero-title-3
 {
     margin-top: -10vw;
-    font-size: 15vw;
     text-align: end;
     user-select: none;
+}
+
+#main-adblock
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 7vh;
+    z-index: 99;
+    width: 290px;
+    height: 50px;
+    background-color: black;
+
+    font-size: 1.5rem;
+
+    color: white;
+    /* text-shadow: 2px 1px var(--main-darker-accent-color); */
+
+    border: #f2eaec 3px solid;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0.5vw 0.5vw;
+
+    transition: 0.5s ease-in-out;   
+    cursor: pointer; 
+}
+
+#main-adblock:hover
+{   
+    color: black;
+    width: 300px;
+    background-color: var(--main-accent-color);
+    /* background: linear-gradient(90deg,rgba(126, 25, 42, 100) 0%, rgb(238, 49, 80) 100%); */
+}
+
+.hidden
+{
+    display: none !important;
+}
+
+.wave-text span {
+    font-size: 15vw;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .star
@@ -800,7 +880,7 @@ img.banners
     border: #f2eaec 3px solid;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.5) 0.5vw 0.5vw;
-    user-select: none;
+    /* user-select: none; */
     /* gap: 3px; */
 }
 
@@ -817,8 +897,21 @@ img.banners
     width: 100%;
     padding-right: 2%;
     height: 2vw;
-    background-color: var(--main-accent-color);
+    background: linear-gradient(90deg,rgb(238, 49, 80) 0%, rgba(126, 25, 42, 100) 100%);
     border-bottom: #f2eaec 3px solid;
+}
+
+.pop-up-close
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #f2eaec;
+    border: 3px inset black;
+    cursor: pointer;
+    user-select: none;
 }
 
 .pop-up-img
@@ -829,6 +922,7 @@ img.banners
     object-fit: cover;
     z-index: -1;
 }
+
 
 /* ---------
    TABLET BREAKPOINT (Max-width: 1024px)
@@ -856,13 +950,11 @@ img.banners
 
     .main-hero-title-1
     {
-        font-size: 25vw;
         user-select: none;
     }
 
     .main-hero-title-3
     {
-        font-size: 25vw;
         user-select: none;
     }
 
