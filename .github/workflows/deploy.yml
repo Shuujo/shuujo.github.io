@@ -42,6 +42,11 @@ jobs:
         working-directory: portfolio-site
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          ls -la portfolio-site/dist
+          test -f portfolio-site/dist/index.html
+
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
         with:
