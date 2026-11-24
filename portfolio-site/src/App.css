@@ -2,14 +2,14 @@
 {
     font-family: 'Swansea';
     src: url('./assets/fonts/Swansea-q3pd.ttf') format('truetype'),
-            url('SwanseaItalic-AwqD.ttf') format('truetype');
+            url('./assets/fonts/SwanseaItalic-AwqD.ttf') format('truetype');
     
 }
 
 @font-face {
     font-family: 'SwanseaBold';
-    src: url('f./assets/fonts/SwanseaBold-D0ox.ttf') format('truetype'),
-            url('SwanseaBoldItalic-p3Dv.ttf') format('truetype');
+    src: url('./assets/fonts/SwanseaBold-D0ox.ttf') format('truetype'),
+            url('./assets/fonts/SwanseaBoldItalic-p3Dv.ttf') format('truetype');
 }
 
 @font-face
