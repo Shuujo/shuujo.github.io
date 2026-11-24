@@ -34,7 +34,7 @@ function Navbar({ popupsEnabled, setPopupsEnabled }) {
   return (
     <nav className={`navbar ${showNavbar ? "navbar-visible" : "navbar-hidden"}`}>
       <a href="#" className="logo">
-        <img className="header-logo" src="./src/assets/Logos/Logo_White_RedPupil.svg"/>
+        <img className="header-logo" src="portfolio-site/src/assets/Logos/Logo_White_RedPupil.svg"/>
       </a>
       <div className="nav-links">
         <a href="#about">about</a>
