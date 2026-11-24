@@ -1,21 +1,21 @@
 @font-face
 {
     font-family: 'Swansea';
-    src: url('fonts/Swansea-q3pd.ttf') format('truetype'),
+    src: url('./assets/fonts/Swansea-q3pd.ttf') format('truetype'),
             url('SwanseaItalic-AwqD.ttf') format('truetype');
     
 }
 
 @font-face {
     font-family: 'SwanseaBold';
-    src: url('fonts/SwanseaBold-D0ox.ttf') format('truetype'),
+    src: url('f./assets/fonts/SwanseaBold-D0ox.ttf') format('truetype'),
             url('SwanseaBoldItalic-p3Dv.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: 'The Youngest';
-    src: url('fonts/The Youngest Script-Rg.ttf') format('truetype');
+    src: url('./assets/fonts/The Youngest Script-Rg.ttf') format('truetype');
 }
 
 /* NAVBAR */
