@@ -1,10 +1,9 @@
-name: Deploy to GitHub Pages
+
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -26,28 +25,28 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 22
           cache: npm
+          cache-dependency-path: portfolio-site/package-lock.json
 
       - name: Install dependencies
+        working-directory: portfolio-site
         run: npm ci
 
-      - name: Build
+      - name: Build portfolio
+        working-directory: portfolio-site
         run: npm run build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload build
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: portfolio-site/dist
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
