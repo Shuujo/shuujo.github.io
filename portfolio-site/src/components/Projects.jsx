@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import projects from "../data/projects"
+import CloverMarket from "./CloverMarket"
 
 function Projects({ selectedProject, setSelectedProject }) {
   const [windowPosition, setWindowPosition] = useState({
@@ -164,6 +165,13 @@ function Projects({ selectedProject, setSelectedProject }) {
                   />
                 ))}
               </div>
+            )}
+
+            {/*Showcase the Clover Market Website if it is selected*/}
+            {selectedProject.title == "Clover Market" ? (
+              <CloverMarket/>
+            ) : (
+              <div/>
             )}
 
             <div className="project-details">
