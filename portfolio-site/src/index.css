@@ -1,0 +1,76 @@
+:root
+{
+    --main-accent-color: #EE3150; /* 238, 49, 80 */
+    --main-darker-accent-color: #822232;
+    --secondary-accent-color: #affbd4;
+    --white: #FFFFFF;
+    --black: #000;
+    --drop-shadow: drop-shadow(3px 3px 0px rgba(64, 83, 79, 0.5));   
+}
+
+@font-face
+{
+    font-family: 'Swansea';
+    src: url('Swansea-q3pd.ttf') format('truetype'),
+            url('SwanseaItalic-AwqD.ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'SwanseaBold';
+    src: url('SwanseaBold-D0ox.ttf') format('truetype'),
+            url('SwanseaBoldItalic-p3Dv.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'The Youngest';
+    src: url('The Youngest Script-Rg.ttf') format('truetype');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SwanseaBold';
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+html
+{
+    color: var(--white);
+    width: 100vw;
+    background-color: black;
+    /* background-image: url('../src/assets/background.jpg'); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    letter-spacing: -1px;
+}
+
+body 
+{
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+
+a 
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover 
+{
+    color: var(--main-accent-color);
+}
+
+.accent-color
+{
+    color: var(--main-accent-color);
+}

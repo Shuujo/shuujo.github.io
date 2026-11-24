@@ -355,45 +355,59 @@ a:hover
     }
 }
 
-.star
+/* Flavour Text */
+
+.flavour
 {
+    display: flex;
+    align-items: center;
     position: absolute;
+    gap: 10px;
     z-index: 999;
-    max-width: 10vw;
-    pointer-events: none;
+    width: auto;
+    height: 2vh;
+    font-size: 1vh;
+    /* background-color: yellow; */
 }
 
-.star-pos-1
+.flavour span
 {
-    right: 0;
-    margin-top: 4vw;
+    /* font-family: 'The Youngest';
+    font-style: 'Script';
+    font-weight: 900; */
 }
 
-.star-section
+.f-top
 {
-    max-width: none;
-    height: 80vh !important;
-    z-index: 0;
-    opacity: 0.2;
-    right: 0;
+    top: 10px;
 }
 
-.star-section-l
+.f-left
 {
-    max-width: none;
-    height: 80vh !important;
-    z-index: 0;
-    opacity: 0.2;
-    left: 0;
+    left: 10px;
 }
 
+.f-right
+{
+    right: 10px;
+}
 
+.f-bottom
+{
+    bottom: 37px;
+}
+
+.f-logo
+{
+    height: inherit;
+}
 
 /* Marquee styles */
 .marquee 
 {
     --gap: 1rem;
     width: 100%;
+    height: auto;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -406,7 +420,7 @@ a:hover
     padding: 10px 0px 10px 0px;
 
     font-weight: 900;
-    z-index: 999;
+    z-index: 998;
     pointer-events: none;
 }
   
@@ -433,65 +447,6 @@ a:hover
     to {
         transform: translateX(calc(-100% - var(--gap)));
     }
-}
-
-/* Main Profile Picture Rotate*/
-
-.rotate
-{
-    animation: rotate 30s linear infinite;
-}
-
-@-webkit-keyframes rotate {
-    0% 
-    {
-        transform: rotate(0deg);
-    }
-    100% 
-    {
-        transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes rotate {
-    0% 
-    {
-        transform: rotate(0deg);
-    }
-    100% 
-    {
-        transform: rotate(360deg);
-    }
-  }
-
-
-/* Slideshow Handler */
-
-.fade-element 
-{
-    opacity: 1;
-    transition: opacity 1s ease-in-out; /* Animates changes smoothly */
-}
-
-.fade-out 
-{
-    opacity: 0;
-    pointer-events: none; /* Prevents users from clicking the invisible element */
-}
-
-.main-showcase
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--main-accent-color);
-    width: 90%;
-    height: 15vw;
-    margin: -8vw auto auto auto;
-    border-radius: 10vw;
-    overflow: hidden;
-    z-index: -99;
-    filter: drop-shadow(40px 20px black);
 }
 
 /* projects.html page*/
@@ -786,7 +741,7 @@ img.banners
     width: 100vw;
     height: 100%;
     background-size: cover;
-    background-image: url('../res/portfolio\ pieces/Medge.png');
+    /* background-image: url('../res/portfolio\ pieces/Medge.png'); */
 }
 
 .about-bio
