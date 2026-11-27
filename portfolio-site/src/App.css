@@ -791,6 +791,22 @@ h1.cursive-text {
   transition: all 1s ease;
 }
 
+.project-motion {
+  background-image: url("./assets/portfolio pieces/Motion Graphics/Odyssey_Banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease;
+}
+
+.project-poster {
+  background-image: url("./assets/portfolio pieces/Poster Designs/Poster_Banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease;
+}
+
 /* ========================================
    PROJECT WINDOW
 ======================================== */
