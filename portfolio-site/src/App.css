@@ -754,26 +754,17 @@ h1.cursive-text {
 .project-kinjo {
   background-image: url("./assets/portfolio pieces/Kinjo/Kinjo_Thumbnail.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: all 1s ease;
-}
-
-.project-kinjo:hover {
-  background-size: 130%;
-  filter: none;
 }
 
 .project-iris {
   background-image: url("./assets/portfolio pieces/Magazine/MagazineMockupV1.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: all 1s ease;
-}
-
-.project-iris:hover {
-  background-size: 130%;
 }
 
 .project-cove {
@@ -784,34 +775,21 @@ h1.cursive-text {
   transition: all 1s ease;
 }
 
-.project-cove:hover {
-  background-size: 100%;
-}
-
 .project-clover {
   background-image: url("./assets/portfolio pieces/CloverMarket/Clover Market Banner_small.png");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: all 1s ease;
-}
-
-.project-clover:hover {
-  background-size: 130%;
 }
 
 .project-shuuujo {
   background-image: url("./assets/portfolio pieces/Shuuujo/Banner CMYK.png");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: all 1s ease;
 }
-
-.project-shuuujo:hover {
-  background-size: 130%;
-}
-
 
 /* ========================================
    PROJECT WINDOW
@@ -894,7 +872,7 @@ h1.cursive-text {
   line-height: 1.7;
 }
 
-.project-images {
+.project-images, .project-videos {
   width: 100%;
 
   display: flex;
@@ -907,7 +885,7 @@ h1.cursive-text {
   padding: 20px;
 }
 
-.project-images img {
+.project-images img, .project-videos video {
   width: auto;
   height: 50vh;
   max-width: 100%;
@@ -1384,7 +1362,7 @@ h1.cursive-text {
   .project-preview {
     padding: 20px;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.75);
   }
 
   .project-card h3 {
@@ -1397,7 +1375,7 @@ h1.cursive-text {
   .project-window {
     width: 95%;
     min-height: 0;
-    max-height: 75vh;
+    /* max-height: 75vh; */
   }
 
   .project-window-content {
@@ -1520,6 +1498,11 @@ h1.cursive-text {
 
   .html-clover-container {
     aspect-ratio: 9 / 16;
+  }
+
+  .html-clover-frame {
+    width: 100%;
+    height: 100%;
   }
 
 }

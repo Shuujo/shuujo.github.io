@@ -25,7 +25,7 @@ function App() {
         setHeroVisible(entry.isIntersecting)
       },
       {
-        threshold: 0.1
+        threshold: 0.4
       }
     )
 

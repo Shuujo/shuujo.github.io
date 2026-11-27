@@ -114,7 +114,7 @@ const projects = [
     src: iconClover,
 
     details:
-      "✦ Clover Market is a capstone project that focuses on human-made art and products. We wanted to elevate and encourage local artists by supporting them throughout their creative journey. Clover Market is a local beginner-friendly market that helps make the application process much easier for starting vendors, while also showcasing them to a broader audience. \n ✦ Clover Market is a capstone project",
+      "✦ Clover Market is a capstone project that focuses on human-made art and products. We wanted to elevate and encourage local artists by supporting them throughout their creative journey. Clover Market is a local beginner-friendly market that helps make the application process much easier for starting vendors, while also showcasing them to a broader audience.",
 
     images: [cloverProj1],
     videos: []

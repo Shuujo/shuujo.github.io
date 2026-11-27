@@ -247,20 +247,35 @@ function Footer({
   )
 }
 
+
 function LiveClock() {
-  const [time, setTime] = useState(
-    new Date().toLocaleTimeString()
-  )
+  const [time, setTime] = useState("")
 
   useEffect(() => {
-    const timerId = setInterval(() => {
-      setTime(new Date().toLocaleTimeString())
-    }, 1000)
+    const updateClock = () => {
+      const now = new Date()
+
+      setTime(
+        now.toLocaleTimeString("en-CA", {
+          timeZone: ("America/Edmonton"),
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+          timeZoneName: "short"
+        })
+      )
+    }
+
+    updateClock()
+
+    const timerId = setInterval(updateClock, 1000)
 
     return () => clearInterval(timerId)
   }, [])
 
   return <h2>{time}</h2>
 }
+console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
+
 
 export default Footer
