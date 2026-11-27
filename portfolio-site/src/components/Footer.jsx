@@ -275,7 +275,6 @@ function LiveClock() {
 
   return <h2>{time}</h2>
 }
-console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
 
 
 export default Footer
