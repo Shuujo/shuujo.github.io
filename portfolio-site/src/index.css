@@ -46,7 +46,7 @@ html
     /* background-image: url('../src/assets/background.jpg'); */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     scroll-behavior: smooth;
     overflow-x: hidden;
     letter-spacing: -1px;

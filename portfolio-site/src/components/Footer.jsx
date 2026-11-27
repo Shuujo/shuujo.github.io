@@ -8,6 +8,7 @@ import aboutIcon from "../assets/icons/About.svg"
 import projectIcon from "../assets/icons/Project.svg"
 import contactIcon from "../assets/icons/Contact.svg"
 import instagramIcon from "../assets/icons/Instagram.svg"
+import linkedInIcon from "../assets/icons/linkedin.svg"
 
 const navigationItems = [
   {
@@ -36,7 +37,7 @@ const contactItems = [
   {
     name: "LinkedIn",
     type: "linkedin",
-    src: instagramIcon
+    src: linkedInIcon
   },
   {
     name: "Instagram",
@@ -108,14 +109,14 @@ function Footer({
 
   const handleLinkedInClick = () => {
     window.open(
-      "https://www.linkedin.com/",
+      "https://www.linkedin.com/in/josh-pahang/",
       "_blank"
     )
   }
 
   const handleInstagramClick = () => {
     window.open(
-      "https://www.instagram.com/",
+      "https://www.instagram.com/shuuujo.jp",
       "_blank"
     )
   }

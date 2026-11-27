@@ -155,12 +155,30 @@ function Projects({ selectedProject, setSelectedProject }) {
               {selectedProject.description}
             </p>
 
+            {/*Showcase the Project Images*/}
             {selectedProject.images.length > 0 && (
               <div className="project-images">
                 {selectedProject.images.map((image, index) => (
                   <img
                     key={index}
                     src={image}
+                    alt={`${selectedProject.title} ${index + 1}`}
+                  />
+                ))}
+              </div>
+            )}
+
+            {/*Showcase the Project Videos*/}
+            {selectedProject.videos.length > 0 && (
+              <div className="project-videos">
+                {selectedProject.videos.map((video, index) => (
+                  <video 
+                    controls 
+                    autoplay 
+                    loop 
+                    controlsList="nodownload" 
+                    src={video}
+                    key={index}
                     alt={`${selectedProject.title} ${index + 1}`}
                   />
                 ))}

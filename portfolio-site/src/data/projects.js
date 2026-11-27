@@ -44,6 +44,8 @@ import cloverProj1 from "../assets/portfolio pieces/CloverMarket/Clover Market B
 
 import shuuujoProj1 from "../assets/portfolio pieces/Shuuujo/Banner CMYK.png";
 
+import motionProj1 from "../assets/portfolio pieces/Motion Graphics/Odyssey_Motion.mp4";
+
 const projects = [
   {
     id: "project-1",
@@ -59,7 +61,9 @@ const projects = [
     details:
       "✦ In the summer of 2024, I was working at the Calgary-based Kinjo Sushi & Grill restaurant, as a server and bartender. I was approached by the management staff, as they were aware I was passionate about graphic design and illustration, and they granted me the opportunity to create new bubble tea designs for the company. ✦ I was able to produce one main design that would be displayed on the side of the cup, and several designs that would be displayed on top of the cup. I was given a limited colour palette, however I did want to display the wide arrange of colours of the bubble tea, so I ended up incorporating some clear elements in my designs as I wanted those bubble tea colours to shine too.",
 
-    images: [kinjoThumbnail, kinjoProj1, kinjoProj2, kinjoProj3, kinjoProj4, kinjoProj5, kinjoProj6, kinjoProj7, kinjoProj8, kinjoProj9]
+    images: [kinjoThumbnail, kinjoProj1, kinjoProj2, kinjoProj3, kinjoProj4, kinjoProj5, kinjoProj6, kinjoProj7, kinjoProj8, kinjoProj9],
+
+    videos: []
   },
 
   {
@@ -76,7 +80,8 @@ const projects = [
     details:
       "Add all of the information about this project here.",
 
-    images: [shuuujoProj1]
+    images: [shuuujoProj1],
+    videos: []
   },
 
   {
@@ -93,7 +98,8 @@ const projects = [
     details:
       "✦ In this project, we were required to create a new flavour for a soda/beer company, and design 2 advertisements in the style of the parent company.",
 
-    images: [coveProj4, coveProj1, coveProj3, coveProj2]
+    images: [coveProj4, coveProj1, coveProj3, coveProj2],
+    videos: []
   },
 
   {
@@ -103,14 +109,15 @@ const projects = [
     type: "School",
     description: "✦ A capstone project exploring a vendor-first approach towards local markets.",
     year: "2026",
-    role: "Brand Design",
-    software: "Illustrator, Photoshop, InDesign",
+    role: "Brand Design / Web Design",
+    software: "Illustrator, Photoshop, InDesign, Visual Studio Code",
     src: iconClover,
 
     details:
-      "Add all of the information about this project here.",
+      "✦ Clover Market is a capstone project that focuses on human-made art and products. We wanted to elevate and encourage local artists by supporting them throughout their creative journey. Clover Market is a local beginner-friendly market that helps make the application process much easier for starting vendors, while also showcasing them to a broader audience. \n ✦ Clover Market is a capstone project",
 
-    images: [cloverProj1]
+    images: [cloverProj1],
+    videos: []
   },
 
   {
@@ -127,7 +134,8 @@ const projects = [
     details:
       "✦ This project features a front cover, editor's letter + table of contents spread, a 2-page spread focusing on typography, a 2-page spread focusing on layout design, and a back cover showcasing a custom advertisement that follows the theme of our magazine.",
 
-    images: [magazineThumbnail, magazineProj2, magazineProj3, magazineProj4, magazineProj5, magazineProj6, magazineProj7, magazineProj8]
+    images: [magazineThumbnail, magazineProj2, magazineProj3, magazineProj4, magazineProj5, magazineProj6, magazineProj7, magazineProj8],
+    videos: []
   },
 
   {
@@ -139,29 +147,47 @@ const projects = [
     year: "2026",
     role: "Motion Graphic Designer",
     software: "After Effects, Premerie Pro, Illustrator",
-    src: iconKinjo,
+    src: iconIris,
 
     details:
-      "✦ In the summer of 2024, I was working at the Calgary-based Kinjo Sushi & Grill restaurant, as a server and bartender. I was approached by the management staff, as they were aware I was passionate about graphic design and illustration, and they granted me the opportunity to create new bubble tea designs for the company. ✦ I was able to produce one main design that would be displayed on the side of the cup, and several designs that would be displayed on top of the cup. I was given a limited colour palette, however I did want to display the wide arrange of colours of the bubble tea, so I ended up incorporating some clear elements in my designs as I wanted those bubble tea colours to shine too.",
+      "✦ A collection of general motion graphics.",
 
-    images: []
+    images: [],
+    videos: [motionProj1]
   },
 
   {
     id: "project-7",
-    className: "project-card project-posters",
+    className: "project-card project-poster",
     title: "Poster Designs",
     type: "Personal",
     description: "✦ A variety of poster designs made as a hobby.",
     year: "2026",
     role: "Graphic Designer",
     software: "Photoshop, Illustrator, Clip Studio Paint",
-    src: iconKinjo,
+    src: iconIris,
 
     details:
-      "✦ In the summer of 2024, I was working at the Calgary-based Kinjo Sushi & Grill restaurant, as a server and bartender. I was approached by the management staff, as they were aware I was passionate about graphic design and illustration, and they granted me the opportunity to create new bubble tea designs for the company. ✦ I was able to produce one main design that would be displayed on the side of the cup, and several designs that would be displayed on top of the cup. I was given a limited colour palette, however I did want to display the wide arrange of colours of the bubble tea, so I ended up incorporating some clear elements in my designs as I wanted those bubble tea colours to shine too.",
+      "✦ A collection of general poster designs.",
+    images: [],
+    videos: []
+  },
 
-    images: []
+  {
+    id: "project-8",
+    className: "project-card project-logo",
+    title: "Logo Designs",
+    type: "Personal",
+    description: "✦ A variety of logo designs made as a hobby.",
+    year: "2026",
+    role: "Graphic Designer",
+    software: "Photoshop, Illustrator, Clip Studio Paint",
+    src: iconIris,
+
+    details:
+      "✦ A collection of general logo designs.",
+    images: [],
+    videos: []
   }
 
 ]

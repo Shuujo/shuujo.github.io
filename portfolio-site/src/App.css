@@ -582,6 +582,13 @@ h1.cursive-text
 }
 
 .popup-wrapper {
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+
   opacity: 1;
   transition: opacity 0.5s ease;
 }
@@ -690,13 +697,14 @@ h1.cursive-text
 {
   background-image: url(./assets/portfolio\ pieces/CoveSoda/Cove_4.jpg);
   background-position:center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: all 1s ease;
 }
+
 .project-cove:hover
 {
-  background-size: 130%;
+  background-size: 100%;
 }
 
 .project-clover
@@ -925,7 +933,7 @@ h1.cursive-text
 
 /* MOBILE */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .navbar {
     align-items: flex-start;
   }
@@ -939,21 +947,31 @@ h1.cursive-text
     min-height: 80vh;
   }
 
+  .hero h1 {
+    font-size: clamp(4rem, 4rem, 15rem);
+    line-height: 0.9;
+  
+    margin: 20px 0;
+    user-select: none;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }
 
   .html-clover-container
-{
-  margin-top: 10px;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 9/16;
-}
+  {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9/16;
+  }
 
-.html-clover-frame
-{
-  width: 100%;
-  height: 100%;
-}
+  .html-clover-frame
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  
 }
